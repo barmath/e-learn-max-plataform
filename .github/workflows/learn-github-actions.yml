@@ -19,8 +19,7 @@ jobs:
           debug: true
       - name: Code Climate Coverage Action
         # You may pin to the exact commit or the version.
-        # uses: paambaati/codeclimate-action@84cea27117a473d605400ca3a97fcef7e433e2d6
-        uses: paambaati/codeclimate-action@v3.0.0
+        uses: paambaati/codeclimate-action@84cea27117a473d605400ca3a97fcef7e433e2d6
         with:
           # Coverage command to execute
           coverageCommand: # optional, default is 
