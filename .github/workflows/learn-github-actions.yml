@@ -10,3 +10,10 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v3.0.0
+        env:
+          CC_TEST_REPORTER_ID: <code_climate_reporter_id>
+        with:
+          coverageCommand: npm run coverage
+          debug: true
