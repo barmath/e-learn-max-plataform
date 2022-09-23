@@ -1,0 +1,16 @@
+Started GET "/" for 172.18.0.1 at 2022-09-21 23:37:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.4ms | Allocations: 665)
+Completed 200 OK in 172ms (Views: 68.5ms | ActiveRecord: 0.0ms | Allocations: 6479)
+
+
+Started GET "/" for 172.18.0.1 at 2022-09-22 23:35:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.4ms | Allocations: 350)
+Completed 200 OK in 76ms (Views: 43.1ms | Allocations: 1100)
+
+
