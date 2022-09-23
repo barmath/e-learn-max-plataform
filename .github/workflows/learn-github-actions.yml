@@ -17,3 +17,20 @@ jobs:
         with:
           coverageCommand: npm run coverage
           debug: true
+      - name: Code Climate Coverage Action
+        # You may pin to the exact commit or the version.
+        # uses: paambaati/codeclimate-action@84cea27117a473d605400ca3a97fcef7e433e2d6
+        uses: paambaati/codeclimate-action@v3.0.0
+        with:
+          # Coverage command to execute
+          coverageCommand: # optional, default is 
+          # Custom working directory for executing the coverage command
+          workingDirectory: # optional, default is 
+          # Enable debugging logs for the Code Climate test reporter
+          debug: # optional, default is false
+          # Locations to find code coverage (Used for builds from multiple locations)
+          coverageLocations: # optional, default is 
+          # See https://docs.codeclimate.com/docs/configuring-test-coverage
+          prefix: # optional, default is 
+          # Verify the downloaded reporter's checksum and GPG signature
+          verifyDownload: # optional, default is true
