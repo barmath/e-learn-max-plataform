@@ -16,6 +16,4 @@ jobs:
         uses: amancevice/setup-code-climate@v0
         with:
           # Code Climate test reporter ID
-          cc_test_reporter_id: # optional
-          # The version of Code Climate test reporter ID.
-          cc_test_reporter_version: # optional, default is latest
+          cc_test_reporter_id: c9d86401462a15ddc1befdf2f214ab6d23be59e1c167504e1ead6119341b6cd7
