@@ -1,30 +1,5 @@
-teste
-
-### Greg está a aprovar essa mensagem
-
-
-
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://codeclimate.com/github/barmath/e-learn-max-plataform
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![Code Climate](https://codeclimate.com/github/barmath/e-learn-max-plataform)](https://codeclimate.com/github/barmath/e-learn-max-plataform)
