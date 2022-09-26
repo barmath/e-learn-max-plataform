@@ -16,7 +16,7 @@
 
 * Link heroku : https://git.heroku.com/secure-plateau-47563.git
 
-* Integrantes 
+* Integrantes :
         Gregório Assagra de Almeida Filho,
         Gustavo Henrique Barbosa Rogério,
         Mateus Santos Saldanha e 
