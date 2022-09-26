@@ -6,3 +6,5 @@
 
 
 https://github.com/barmath/e-learn-max-plataform/actions/workflows/learn-github-actions.yml/badge.svg
+
+![example workflow](https://github.com/barmath/e-learn-max-plataform/actions/workflows/learn-github-actions.yml/badge.svg)
