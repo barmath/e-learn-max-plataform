@@ -14,7 +14,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/barmath/e-learn-max-plataform/badge.svg?branch=main)](https://coveralls.io/github/barmath/e-learn-max-plataform?branch=main)
 
-* Link heroku : https://git.heroku.com/secure-plateau-47563.git
+* Link heroku :  https://secure-plateau-47563.herokuapp.com/
 
 * Integrantes :
         Gregório Assagra de Almeida Filho,
