@@ -59,8 +59,7 @@ group :development, :test do
   gem "sqlite3", "~> 1.4"
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
-
-
+  gem 'devise', '~> 4.8', '>= 4.8.1'
 
 end
 
