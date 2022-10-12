@@ -1226,3 +1226,23 @@ Started GET "/bootstrap.min.js" for 172.17.0.1 at 2022-10-12 20:24:47 +0000
 ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
 DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+Started GET "/" for 172.20.0.1 at 2022-10-12 21:55:05 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 45.5ms | Allocations: 483)
+  Rendered home/_header.html.erb (Duration: 15.3ms | Allocations: 607)
+  Rendered layout layouts/application.html.erb (Duration: 4065.7ms | Allocations: 107582)
+Completed 200 OK in 4440ms (Views: 4182.9ms | ActiveRecord: 0.0ms | Allocations: 113590)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-12 21:55:11 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-12 21:55:12 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
