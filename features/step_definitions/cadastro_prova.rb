@@ -7,8 +7,9 @@ Quando('aperto o botão ‘criar prova’') do
 end
 
 Quando('preencho o campo nome da prova') do |table|
-  @nome_prova = table.row_hash['nome_prova']
-  fill_in
+  fill_in @prova_id :with "1006424"
+  fill_in @nome_prova :with "Jefferson"
+
 end
 
 Quando('aperto adicionar questão') do

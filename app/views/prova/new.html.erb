@@ -1,0 +1,16 @@
+<h1>Nova Prova</h1>
+<%= form_with scope: :prova, url: prova_path, local: true do |form| %>
+  <p>
+    <%= form.label :nome_prova %><br>
+    <%= form.text_field :nome_prova %>
+  </p>
+
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </p>
+
+  <p>
+    <%= form.submit 'Salvar novo aluno' %>
+  </p>
+<% end %>

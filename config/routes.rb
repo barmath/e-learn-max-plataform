@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   #get 'home/index'
   get 'home/about'
   root 'home#index'
-  resources :index 
+  resources :index
+  resources :prova
+  resources :pergunta
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
