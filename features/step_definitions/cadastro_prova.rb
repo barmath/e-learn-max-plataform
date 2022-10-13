@@ -8,7 +8,7 @@ end
 
 Quando('preencho o campo nome da prova') do |table|
   @nome_prova = table.row_hash['nome_prova']
-  pending
+  fill_in
 end
 
 Quando('aperto adicionar questão') do
