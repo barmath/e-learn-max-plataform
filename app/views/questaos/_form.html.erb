@@ -1,0 +1,22 @@
+<%= form_with(model: questao) do |form| %>
+  <% if questao.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(questao.errors.count, "error") %> Pergunta não salva:</h2>
+
+      <ul>
+        <% questao.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :pergunta, style: "display: block" %>
+    <%= form.text_area :pergunta %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
