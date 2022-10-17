@@ -1,6 +1,7 @@
 Dado('que estou na página de nova pergunta') do
-  visit '/questaos/new'
-  click_on: 
+  visit 'questaos/new'
+  expect('questaos/new').to have_content("Nova Pergunta")
+    #click_on 'C Pergunta'
 end
 
 Quando('preencho o campo de pergunta com {string}') do |string|

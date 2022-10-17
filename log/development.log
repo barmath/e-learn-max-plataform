@@ -1954,3 +1954,310 @@ ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
 ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
   
+Started GET "/questaos" for 172.19.0.1 at 2022-10-17 00:43:25 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered questaos/_questao.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2038)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 15701)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.5ms | Allocations: 16618)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 00:43:25 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 00:43:25 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/questaos/new" for 172.19.0.1 at 2022-10-17 00:43:27 +0000
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 00:43:27 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 00:43:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Processing by QuestaosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 8.0ms | Allocations: 4829)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 5247)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 11947)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 13470)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 00:43:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:11:01 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:11:01 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:13:30 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:13:30 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/" for 172.19.0.1 at 2022-10-17 01:26:36 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 182)
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 543)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 14691)
+Completed 200 OK in 33ms (Views: 32.0ms | Allocations: 15563)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:26:37 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:26:37 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/questaos" for 172.19.0.1 at 2022-10-17 01:26:40 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 2.4ms | Allocations: 157)
+  Rendered questaos/_questao.html.erb (Duration: 0.4ms | Allocations: 16)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2444)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4888)
+Completed 200 OK in 29ms (Views: 22.8ms | ActiveRecord: 0.5ms | Allocations: 5938)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:26:40 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:26:40 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/questaos/3" for 172.19.0.1 at 2022-10-17 01:26:45 +0000
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/show.html.erb within layouts/application
+  Rendered questaos/_questao.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered questaos/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 737)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3188)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 4524)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:26:45 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:26:45 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started DELETE "/questaos/3" for 172.19.0.1 at 2022-10-17 01:26:47 +0000
+Processing by QuestaosController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questaos_controller.rb:52:in `destroy'
+  [1m[36mQuestao Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questaos" WHERE "questaos"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/questaos_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questaos_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/questaos
+Completed 302 Found in 15ms (ActiveRecord: 8.0ms | Allocations: 2183)
+
+
+Started GET "/questaos" for 172.19.0.1 at 2022-10-17 01:26:47 +0000
+Processing by QuestaosController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 893)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layouts/_alerts.html.erb (Duration: 1.4ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3584)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 3895)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:26:47 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:26:47 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/questaos/new" for 172.19.0.1 at 2022-10-17 01:27:05 +0000
+Processing by QuestaosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 9.8ms | Allocations: 963)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1244)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 3714)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 4028)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:27:05 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:27:05 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started POST "/questaos" for 172.19.0.1 at 2022-10-17 01:27:40 +0000
+Processing by QuestaosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "questao"=>{"pergunta"=>"Qual tag do HTML pra deixar o conteúdo em negrito?"}, "commit"=>"Salvar Pergunta"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questaos_controller.rb:27:in `block in create'
+  [1m[36mQuestao Create (0.5ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "Qual tag do HTML pra deixar o conteúdo em negrito?"], ["created_at", "2022-10-17 01:27:40.511771"], ["updated_at", "2022-10-17 01:27:40.511771"]]
+  ↳ app/controllers/questaos_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questaos_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/questaos/4
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms | Allocations: 2064)
+
+
+Started GET "/questaos/4" for 172.19.0.1 at 2022-10-17 01:27:40 +0000
+Processing by QuestaosController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/show.html.erb within layouts/application
+  Rendered questaos/_questao.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered questaos/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 552)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 185)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3054)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 3743)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:27:40 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:27:40 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/questaos" for 172.19.0.1 at 2022-10-17 01:27:59 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered questaos/_questao.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 939)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3390)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms | Allocations: 3650)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:27:59 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:27:59 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/questaos/4" for 172.19.0.1 at 2022-10-17 01:28:09 +0000
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:28:09 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/show.html.erb within layouts/application
+  Rendered questaos/_questao.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered questaos/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 745)
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:28:09 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 17221)
+Completed 200 OK in 53ms (Views: 46.2ms | ActiveRecord: 0.2ms | Allocations: 18684)
+
+
+Started GET "/questaos/4/edit" for 172.19.0.1 at 2022-10-17 01:28:25 +0000
+Processing by QuestaosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/edit.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 3.8ms | Allocations: 708)
+  Rendered questaos/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 986)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3448)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.2ms | Allocations: 4185)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:28:25 +0000
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:28:25 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:28:27 +0000
+Started GET "/questaos" for 172.19.0.1 at 2022-10-17 01:28:27 +0000
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-10-17 01:28:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2182)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 22912)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.1ms | Allocations: 24100)
+
+
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-10-17 01:28:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
