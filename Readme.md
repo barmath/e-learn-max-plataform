@@ -19,6 +19,7 @@
 * Integrantes :
         Gregório Assagra de Almeida Filho,
         Gustavo Henrique Barbosa Rogério,
+        Gustavo Pimentel Soares,
         Mateus Santos Saldanha e 
         Matheus Barbosa
 
