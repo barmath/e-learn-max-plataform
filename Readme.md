@@ -20,10 +20,9 @@
         Gregório Assagra de Almeida Filho,
         Gustavo Henrique Barbosa Rogério,
         Gustavo Pimentel Soares,
+        Louis Zháo Long,
         Mateus Santos Saldanha e 
         Matheus Barbosa
-
-* Breve descrição 
 
 O projeto em questão será o desenvolvimento de uma plataforma em que instituições de ensino poderão utilizar como um ambiente para realização de provas com o intuito de facilitar a aplicação de provas tanto por parte do professor como a realização pelos alunos, propondo uma interação mais objetiva e funcional para as partes interessadas.
 Algumas funções principais da plataforma estão relacionadas ao cadastramento de alunos e professores, adição e realização de provas, visualização e acompanhamento de resultados.
