@@ -1,0 +1,397 @@
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "questaos"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "questaos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pergunta" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221016214132)[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221010130110);
+
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-10-17 00:12:56.623860"], ["updated_at", "2022-10-17 00:12:56.623860"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "e0a31ca49864c28a33d9021cf967ebdbb5e7f807"], ["created_at", "2022-10-17 00:12:56.630364"], ["updated_at", "2022-10-17 00:12:56.630364"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/create" for 127.0.0.1 at 2022-10-17 00:24:06 +0000
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.8ms | Allocations: 3441)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/create" for 127.0.0.1 at 2022-10-17 00:24:32 +0000
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms | Allocations: 3441)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/create" for 127.0.0.1 at 2022-10-17 00:24:43 +0000
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms | Allocations: 3441)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/create" for 127.0.0.1 at 2022-10-17 00:25:28 +0000
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 12ms (ActiveRecord: 1.2ms | Allocations: 3441)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 00:26:00 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 14.9ms | Allocations: 3298)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 3772)
+  Rendered home/_header.html.erb (Duration: 9.3ms | Allocations: 656)
+  Rendered layout layouts/application.html.erb (Duration: 389.1ms | Allocations: 95699)
+Completed 200 OK in 425ms (Views: 394.7ms | ActiveRecord: 0.9ms | Allocations: 115284)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 00:43:44 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 13.8ms | Allocations: 3298)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 3772)
+  Rendered home/_header.html.erb (Duration: 6.8ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 119.9ms | Allocations: 37811)
+Completed 200 OK in 151ms (Views: 127.4ms | ActiveRecord: 0.5ms | Allocations: 57396)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 00:44:15 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 14.9ms | Allocations: 3298)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 3772)
+  Rendered home/_header.html.erb (Duration: 6.9ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 113.6ms | Allocations: 37920)
+Completed 200 OK in 145ms (Views: 119.2ms | ActiveRecord: 0.7ms | Allocations: 57505)
+Started POST "/questaos" for 127.0.0.1 at 2022-10-17 00:44:16 +0000
+Processing by QuestaosController#create as HTML
+  Parameters: {"questao"=>{"pergunta"=>""}, "commit"=>"Create Questao"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", ""], ["created_at", "2022-10-17 00:44:16.135695"], ["updated_at", "2022-10-17 00:44:16.135695"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/questaos/1
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 811)
+Started GET "/questaos/1" for 127.0.0.1 at 2022-10-17 00:44:16 +0000
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/show.html.erb within layouts/application
+  Rendered questaos/_questao.html.erb (Duration: 0.7ms | Allocations: 158)
+  Rendered questaos/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1041)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 186)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2887)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 3445)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 00:45:29 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 6.2ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3615)
+  Rendered home/_header.html.erb (Duration: 8.0ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 102.4ms | Allocations: 37724)
+Completed 200 OK in 130ms (Views: 106.0ms | ActiveRecord: 0.6ms | Allocations: 57308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 00:47:20 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 13.9ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 3615)
+  Rendered home/_header.html.erb (Duration: 7.0ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 115.6ms | Allocations: 37703)
+Completed 200 OK in 149ms (Views: 122.5ms | ActiveRecord: 0.6ms | Allocations: 57288)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 00:47:35 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 5.7ms | Allocations: 3140)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3614)
+  Rendered home/_header.html.erb (Duration: 6.7ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 127.1ms | Allocations: 37560)
+Completed 200 OK in 155ms (Views: 130.5ms | ActiveRecord: 0.6ms | Allocations: 57144)
+Started POST "/questaos" for 127.0.0.1 at 2022-10-17 00:47:36 +0000
+Processing by QuestaosController#create as HTML
+  Parameters: {"questao"=>{"pergunta"=>""}, "commit"=>"Salvar Pergunta"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", ""], ["created_at", "2022-10-17 00:47:36.051539"], ["updated_at", "2022-10-17 00:47:36.051539"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/questaos/1
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 809)
+Started GET "/questaos/1" for 127.0.0.1 at 2022-10-17 00:47:36 +0000
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/show.html.erb within layouts/application
+  Rendered questaos/_questao.html.erb (Duration: 0.8ms | Allocations: 158)
+  Rendered questaos/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1042)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 186)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2875)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 3432)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:02:16 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 762)
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 115.4ms | Allocations: 34741)
+Completed 200 OK in 127ms (Views: 118.2ms | ActiveRecord: 0.2ms | Allocations: 39828)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:02:42 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 762)
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 111.5ms | Allocations: 34708)
+Completed 200 OK in 123ms (Views: 115.2ms | ActiveRecord: 0.3ms | Allocations: 39795)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:04:18 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.3ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 761)
+  Rendered home/_header.html.erb (Duration: 3.3ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 114.2ms | Allocations: 34815)
+Completed 200 OK in 125ms (Views: 117.6ms | ActiveRecord: 0.3ms | Allocations: 39902)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:04:58 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 761)
+  Rendered home/_header.html.erb (Duration: 2.9ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 58.4ms | Allocations: 34800)
+Completed 200 OK in 68ms (Views: 60.6ms | ActiveRecord: 0.3ms | Allocations: 39885)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:05:17 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 762)
+  Rendered home/_header.html.erb (Duration: 4.5ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 102.6ms | Allocations: 34764)
+Completed 200 OK in 113ms (Views: 105.7ms | ActiveRecord: 0.2ms | Allocations: 39850)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 01:05:39 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 6.8ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3614)
+  Rendered home/_header.html.erb (Duration: 5.8ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 120.2ms | Allocations: 37698)
+Completed 200 OK in 144ms (Views: 123.2ms | ActiveRecord: 0.6ms | Allocations: 57283)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 01:06:37 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 6.4ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3615)
+  Rendered home/_header.html.erb (Duration: 6.4ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 101.0ms | Allocations: 37504)
+Completed 200 OK in 145ms (Views: 104.9ms | ActiveRecord: 0.7ms | Allocations: 57086)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 01:08:50 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 6.0ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3615)
+  Rendered home/_header.html.erb (Duration: 6.7ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 120.6ms | Allocations: 37766)
+Completed 200 OK in 146ms (Views: 123.8ms | ActiveRecord: 0.6ms | Allocations: 57351)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:09:21 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 761)
+  Rendered home/_header.html.erb (Duration: 3.1ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 114.3ms | Allocations: 34716)
+Completed 200 OK in 127ms (Views: 117.4ms | ActiveRecord: 0.2ms | Allocations: 39803)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 01:09:55 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 7.0ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3615)
+  Rendered home/_header.html.erb (Duration: 6.4ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 89.4ms | Allocations: 37575)
+Completed 200 OK in 130ms (Views: 93.3ms | ActiveRecord: 1.2ms | Allocations: 57157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 01:10:50 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 6.6ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3615)
+  Rendered home/_header.html.erb (Duration: 7.7ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 122.0ms | Allocations: 37346)
+Completed 200 OK in 148ms (Views: 125.2ms | ActiveRecord: 0.6ms | Allocations: 56930)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:11:25 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 762)
+  Rendered home/_header.html.erb (Duration: 2.9ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 34720)
+Completed 200 OK in 74ms (Views: 65.3ms | ActiveRecord: 0.3ms | Allocations: 39805)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:11:46 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.3ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 762)
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 98.1ms | Allocations: 34330)
+Completed 200 OK in 109ms (Views: 100.7ms | ActiveRecord: 0.3ms | Allocations: 39416)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:12:42 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 762)
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 112.4ms | Allocations: 34748)
+Completed 200 OK in 122ms (Views: 115.2ms | ActiveRecord: 0.2ms | Allocations: 39835)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos" for 127.0.0.1 at 2022-10-17 01:12:54 +0000
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 762)
+  Rendered home/_header.html.erb (Duration: 3.3ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 102.4ms | Allocations: 34802)
+Completed 200 OK in 115ms (Views: 105.0ms | ActiveRecord: 0.4ms | Allocations: 39888)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questafaefaos" for 127.0.0.1 at 2022-10-17 01:13:07 +0000
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-10-17 01:14:16 +0000
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 13.8ms | Allocations: 3141)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 3614)
+  Rendered home/_header.html.erb (Duration: 6.8ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 109.3ms | Allocations: 37733)
+Completed 200 OK in 145ms (Views: 116.8ms | ActiveRecord: 0.7ms | Allocations: 57318)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
