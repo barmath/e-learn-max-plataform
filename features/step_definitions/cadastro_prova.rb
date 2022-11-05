@@ -6,17 +6,24 @@ Quando('aperto o botão ‘criar prova’') do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Quando('preencho o campo nome da prova') do |table|
-  fill_in @prova_id :with "1006424"
-  fill_in @nome_prova :with "Jefferson"
-
+Quando('preencho o campo {string} com {string}') do |string, string2|
+  fill_in string with:string2
 end
 
 Quando('aperto adicionar questão') do
+
+  click_on 'Adicionar Questão'
   pending # Write code here that turns the phrase above into concrete actions
 end
 
 Quando('adiciono questão salva') do
+
+  within('#criar_prova') do
+    click_on 'adicionar questão'
+    within('#adicionar_questao') do
+      select()
+    end
+  end
   pending # Write code here that turns the phrase above into concrete actions
 end
 

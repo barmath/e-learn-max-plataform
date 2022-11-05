@@ -1291,3 +1291,148 @@ Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-13 20:24:46 +0000
   
 ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+Started GET "/" for 172.20.0.1 at 2022-10-14 19:21:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 124.3ms | Allocations: 377)
+  Rendered home/_header.html.erb (Duration: 98.9ms | Allocations: 604)
+  Rendered layout layouts/application.html.erb (Duration: 6445.8ms | Allocations: 36130)
+Completed 200 OK in 7103ms (Views: 6753.5ms | ActiveRecord: 0.0ms | Allocations: 40983)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-14 19:21:15 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-14 19:21:16 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/" for 172.20.0.1 at 2022-10-14 19:56:57 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 32.7ms | Allocations: 195)
+  Rendered layout layouts/application.html.erb (Duration: 196.3ms | Allocations: 2575)
+Completed 200 OK in 270ms (Views: 210.7ms | Allocations: 2820)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-14 19:57:00 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-14 19:57:01 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_up" for 172.20.0.1 at 2022-10-14 19:58:11 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 63.0ms | Allocations: 234)
+  Rendered devise/shared/_links.html.erb (Duration: 160.8ms | Allocations: 642)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1334.7ms | Allocations: 8305)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 1505.0ms | Allocations: 10741)
+Completed 200 OK in 1987ms (Views: 1589.1ms | ActiveRecord: 57.4ms | Allocations: 28775)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-14 19:58:14 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-14 19:58:14 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/users" for 172.20.0.1 at 2022-10-14 19:58:41 +0000
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"greguer@luidi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (4.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "greguer@luidi.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (16.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "greguer@luidi.com"], ["encrypted_password", "$2a$12$1CnNmTNJLgNxeI3rmFiCpe0no5a7smBwnf5BKL2wNmZcRtfdAY3U6"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["created_at", "2022-10-14 19:58:43.440628"], ["updated_at", "2022-10-14 19:58:43.440628"]]
+  [1m[36mTRANSACTION (18.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1552ms (ActiveRecord: 39.6ms | Allocations: 12691)
+
+
+Started GET "/" for 172.20.0.1 at 2022-10-14 19:58:43 +0000
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 12.3ms | Allocations: 1159)
+  Rendered layouts/_alerts.html.erb (Duration: 25.8ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 177.3ms | Allocations: 3986)
+Completed 200 OK in 214ms (Views: 175.9ms | ActiveRecord: 3.4ms | Allocations: 4283)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-14 19:58:44 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-14 19:58:44 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/edit" for 172.20.0.1 at 2022-10-14 19:58:51 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 141.9ms | Allocations: 2357)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 335.9ms | Allocations: 4816)
+Completed 200 OK in 444ms (Views: 391.1ms | ActiveRecord: 3.4ms | Allocations: 6331)
+
+
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-14 19:58:52 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-14 19:58:52 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-14 19:58:55 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-14 19:58:55 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/" for 172.20.0.1 at 2022-10-14 19:58:56 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 8.6ms | Allocations: 904)
+  Rendered layout layouts/application.html.erb (Duration: 153.7ms | Allocations: 3395)
+Completed 200 OK in 189ms (Views: 153.1ms | ActiveRecord: 3.4ms | Allocations: 3658)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.20.0.1 at 2022-10-14 19:58:56 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.20.0.1 at 2022-10-14 19:58:57 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /myapp/config/environment.rb:5)

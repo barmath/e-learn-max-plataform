@@ -1,0 +1,2 @@
+class Perguntum < ApplicationRecord
+end
