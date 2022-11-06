@@ -21,8 +21,8 @@ jobs:
       - name: Test
         run: bundle exec rspec
 
-      - name: Simplecov Report
-        uses: aki77/simplecov-report-action@v1
+      - name: SimpleCov+ Action
+        uses: joshmfrankel/simplecov-check-action@1.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
