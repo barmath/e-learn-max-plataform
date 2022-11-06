@@ -4,6 +4,11 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - name: Publish to coveralls.io
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -17,8 +22,4 @@ jobs:
         with:
           # Code Climate test reporter ID
           cc_test_reporter_id: c9d86401462a15ddc1befdf2f214ab6d23be59e1c167504e1ead6119341b6cd7
-
-      - name: Publish to coveralls.io
-        uses: coverallsapp/github-action@v1.1.2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          
