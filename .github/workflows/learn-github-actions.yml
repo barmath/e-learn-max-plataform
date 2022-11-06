@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+            ruby-version: 2.7.6
+            bundler-cache: true
       - name: Setup Code Climate
        # You may pin to the exact commit or the version.
       # uses: amancevice/setup-code-climate@2d0861ea2da616c79b758c4646ca49bfdc651a4c
@@ -17,6 +17,10 @@ jobs:
         with:
           # Code Climate test reporter ID
           cc_test_reporter_id: c9d86401462a15ddc1befdf2f214ab6d23be59e1c167504e1ead6119341b6cd7
+
+      - name: Test
+        run: bundle exec rspec
+
       - name: SimpleCov+ Action
         uses: joshmfrankel/simplecov-check-action@1.0.0
         with:
