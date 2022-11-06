@@ -17,8 +17,8 @@ jobs:
         with:
           # Code Climate test reporter ID
           cc_test_reporter_id: c9d86401462a15ddc1befdf2f214ab6d23be59e1c167504e1ead6119341b6cd7
-      - name: SimpleCov+ Action
-        uses: joshmfrankel/simplecov-check-action@1.0.0
+      - name: Simplecov Report
+        uses: aki77/simplecov-report-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
