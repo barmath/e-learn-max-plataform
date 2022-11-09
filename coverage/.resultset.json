@@ -178,6 +178,199 @@
         }
       }
     },
-    "timestamp": 1668013586
+    "timestamp": 1668013870
+  },
+  "Cucumber Features": {
+    "coverage": {
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/models/questao.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/controllers/questaos_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/controllers/home_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/helpers/home_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/helpers/questaos_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/matheusbarbosa/Documents/USP/4sm/engsoft/e-learn-max-plataform/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1668014101
   }
 }
