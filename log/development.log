@@ -2466,3 +2466,84 @@ Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.2
   
 ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
   
+Started GET "/" for 127.0.0.1 at 2022-11-09 14:19:51 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 383)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 7.8ms | Allocations: 3806)
+  Rendered layout layouts/application.html.erb (Duration: 276.7ms | Allocations: 112920)
+Completed 200 OK in 290ms (Views: 279.7ms | ActiveRecord: 0.9ms | Allocations: 117822)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 14:19:52 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 14:19:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-11-09 14:20:00 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 825)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 6473)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 8940)
+Completed 200 OK in 38ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 26685)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 14:20:00 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 14:20:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-11-09 14:20:02 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 232)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2252)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4730)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 5868)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 14:20:02 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 14:20:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-09 14:20:08 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 14:20:08 -0300
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 203)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2887)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 3267)
+
+
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 14:20:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
