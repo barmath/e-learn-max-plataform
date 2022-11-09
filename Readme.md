@@ -14,7 +14,7 @@
 
 * Link heroku :  https://secure-plateau-47563.herokuapp.com/
 
-* Integrantes :
+* Integrantes : 
         Gregório Assagra de Almeida Filho,
         Gustavo Henrique Barbosa Rogério,
         Gustavo Pimentel Soares,
