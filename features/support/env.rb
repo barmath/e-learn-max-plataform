@@ -4,9 +4,9 @@
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 
-require 'cucumber/rails'
 require 'simplecov'
-SimpleCov.start 'rails'
+require 'simplecov-lcov'
+require 'cucumber/rails'
 
 # frozen_string_literal: true
 
