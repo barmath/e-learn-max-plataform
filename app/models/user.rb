@@ -8,7 +8,19 @@ class User < ApplicationRecord
 
   after_create :assign_default_role
 
+  validate :must_have_a_role, on: :update 
+
+ 
+  private
+
   def assign_default_role
     self.add_role(:newuser) if self.roles.blank?
   end
+
+  def must_have_a_role
+    unless roles.any?
+      errors.add(:roles, 'must to have at least 1 role')
+    end
+  end 
+
 end

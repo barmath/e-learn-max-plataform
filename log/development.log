@@ -4084,3 +4084,327 @@ ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
   
 ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
+Started GET "/users" for 127.0.0.1 at 2022-11-09 12:14:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  [1m[36mRole Pluck (0.7ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 38.4ms | Allocations: 35747)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 4.9ms | Allocations: 2063)
+  Rendered layout layouts/application.html.erb (Duration: 387.3ms | Allocations: 135391)
+Completed 200 OK in 399ms (Views: 388.1ms | ActiveRecord: 2.7ms | Allocations: 140406)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:14:14 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:14:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-11-09 12:14:16 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/views/users/edit.html.erb:2
+  [1m[36mRole Pluck (0.2ms)[0m  [1m[34mSELECT "roles"."id" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/edit.html.erb:2
+  Rendered users/edit.html.erb within layouts/application (Duration: 21.1ms | Allocations: 19161)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 879)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 22335)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.7ms | Allocations: 23680)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:14:16 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:14:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started PATCH "/users/1" for 127.0.0.1 at 2022-11-09 12:14:17 -0300
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"role_ids"=>["", "1", "2"]}, "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" IN (?, ?)[0m  [["id", 1], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `update'
+Redirected to http://127.0.0.1:3000/users
+Completed 302 Found in 9ms (ActiveRecord: 0.8ms | Allocations: 4855)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-11-09 12:14:17 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 4005)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 873)
+  Rendered layouts/_alerts.html.erb (Duration: 0.9ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 7675)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.6ms | Allocations: 7988)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:14:17 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:14:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-11-09 12:19:20 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  [1m[36mRole Pluck (0.8ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 30.6ms | Allocations: 14113)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1109)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 29516)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 4.2ms | Allocations: 30255)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:19:20 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:19:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-11-09 12:19:21 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/views/users/edit.html.erb:2
+  [1m[36mRole Pluck (0.2ms)[0m  [1m[34mSELECT "roles"."id" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/edit.html.erb:2
+  Rendered users/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3665)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 873)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 6805)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.6ms | Allocations: 8080)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:19:21 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:19:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started PATCH "/users/1" for 127.0.0.1 at 2022-11-09 12:19:23 -0300
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"role_ids"=>["", "1"]}, "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mUser::HABTM_Roles Delete All (3.3ms)[0m  [1m[31mDELETE FROM "users_roles" WHERE "users_roles"."user_id" = ? AND "users_roles"."role_id" = ?[0m  [["user_id", 1], ["role_id", 2]]
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `update'
+Redirected to http://127.0.0.1:3000/users
+Completed 302 Found in 15ms (ActiveRecord: 4.8ms | Allocations: 5923)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-11-09 12:19:23 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.2ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4000)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 873)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 7423)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.6ms | Allocations: 7686)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:19:23 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:19:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-11-09 12:19:24 -0300
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:19:24 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/views/users/edit.html.erb:2
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."id" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/edit.html.erb:2
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2449)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 897)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5853)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 6587)
+
+
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:19:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started PATCH "/users/1" for 127.0.0.1 at 2022-11-09 12:19:25 -0300
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"role_ids"=>[""]}, "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mUser::HABTM_Roles Delete All (0.4ms)[0m  [1m[31mDELETE FROM "users_roles" WHERE "users_roles"."user_id" = ? AND "users_roles"."role_id" = ?[0m  [["user_id", 1], ["role_id", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/views/users/edit.html.erb:2
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1393)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 871)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4552)
+Completed 422 Unprocessable Entity in 15ms (Views: 6.9ms | ActiveRecord: 1.5ms | Allocations: 9285)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:19:25 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:19:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-11-09 12:24:24 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/views/users/edit.html.erb:2
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT "roles"."id" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/edit.html.erb:2
+  Rendered users/edit.html.erb within layouts/application (Duration: 19.8ms | Allocations: 2607)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 4]]
+  ↳ app/views/home/_header.html.erb:13
+  Rendered home/_header.html.erb (Duration: 7.3ms | Allocations: 2185)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 7438)
+Completed 200 OK in 54ms (Views: 43.5ms | ActiveRecord: 1.5ms | Allocations: 8799)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:24:24 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:24:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-09 12:24:29 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 180)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 4]]
+  ↳ app/views/home/_header.html.erb:13
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 1826)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4470)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 5229)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 12:24:29 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 12:24:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
