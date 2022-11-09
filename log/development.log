@@ -2547,3 +2547,30 @@ ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-11-09 16:28:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 479)
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 727)
+  Rendered layout layouts/application.html.erb (Duration: 743.5ms | Allocations: 97999)
+Completed 200 OK in 766ms (Views: 751.5ms | ActiveRecord: 0.0ms | Allocations: 102663)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 16:28:07 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 16:28:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-09 16:28:07 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-09 16:28:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
