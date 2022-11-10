@@ -5,7 +5,7 @@ Dado('que estou na página de nova pergunta') do
 end
 
 Quando('preencho o campo de pergunta com {string}') do |string|
-  
+  pending
 end
 
 Quando('aperto o botão Salvar Pergunta') do
