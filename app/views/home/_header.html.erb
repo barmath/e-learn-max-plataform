@@ -10,8 +10,6 @@
        
       <% if user_signed_in? %>
 
-        Are you a admin ? <%= current_user.has_role? :admin %>
-
         <li class="nav-item">
           <%= link_to 'About us', home_about_path, class:"nav-link" %>
         </li>
