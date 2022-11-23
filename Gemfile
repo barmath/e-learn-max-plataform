@@ -4,6 +4,7 @@ ruby "3.1.2"
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+ruby "3.1.2"
 
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "sprockets-rails"
@@ -17,6 +18,7 @@ gem "bootsnap", require: false
 gem 'coveralls_reborn', '~> 0.25.0', require: false
 gem "sqlite3", "~> 1.4"
 gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'rolify'
 
 gem 'pg'
 group :development, :test do
