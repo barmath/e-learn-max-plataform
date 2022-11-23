@@ -4,10 +4,7 @@ ruby "3.1.2"
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-<<<<<<< HEAD
 ruby "3.1.2"
-=======
->>>>>>> main
 
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "sprockets-rails"
@@ -18,14 +15,10 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
-<<<<<<< HEAD
-gem 'coveralls', require: false
-gem 'rolify'
-=======
 gem 'coveralls_reborn', '~> 0.25.0', require: false
 gem "sqlite3", "~> 1.4"
 gem 'devise', '~> 4.8', '>= 4.8.1'
->>>>>>> main
+gem 'rolify'
 
 gem 'pg'
 group :development, :test do
