@@ -2,12 +2,12 @@
   <% if current_user.has_role? :aluno %>
     <h1>Bem vindo ao portal do aluno !</h1>
     <br>
-    < !-- INSERIR AQUI REDIRECIONAMENTO PARA PAGINA DO ALUNO-- >
+    <%= render 'home/alunos_index'%>
   <% end %>
   <% if current_user.has_role? :professor %>
     <h1>Bem vindo ao portal do Professor !</h1>
     <br>
-    < !-- INSERIR AQUI REDIRECIONAMENTO PARA PAGINA DO PROFESSOR -- >
+    <%= render 'home/professor_index'%>
   <% end %>
   <% if current_user.has_role? :admin %>
     <h1>Bem vindo ao portal do Admin !</h1>
