@@ -1,2 +1,0 @@
-class Perguntum < ApplicationRecord
-end
