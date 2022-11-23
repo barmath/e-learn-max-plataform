@@ -2,8 +2,6 @@
 
 * GPA do projeto 
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5cdacd0bc7372f95aa88/test_coverage)](https://codeclimate.com/github/barmath/e-learn-max-plataform/test_coverage)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/5cdacd0bc7372f95aa88/maintainability)](https://codeclimate.com/github/barmath/e-learn-max-plataform/maintainability)
 
 * Workflow referente a branch master
@@ -14,9 +12,9 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/barmath/e-learn-max-plataform/badge.svg?branch=main)](https://coveralls.io/github/barmath/e-learn-max-plataform?branch=main)
 
-* Link heroku :  https://secure-plateau-47563.herokuapp.com/
+* Link heroku :  https://trabalho-eng-soft-each.herokuapp.com/
 
-* Integrantes :
+* Integrantes : 
         Gregório Assagra de Almeida Filho,
         Gustavo Henrique Barbosa Rogério,
         Gustavo Pimentel Soares,

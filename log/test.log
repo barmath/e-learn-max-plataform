@@ -395,3 +395,384 @@ Processing by QuestaosController#new as HTML
   Rendered layout layouts/application.html.erb (Duration: 109.3ms | Allocations: 37733)
 Completed 200 OK in 145ms (Views: 116.8ms | ActiveRecord: 0.7ms | Allocations: 57318)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2022-11-09 14:04:38 -0300
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-11-09 14:04:38 -0300
+Processing by QuestaosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 19.2ms | Allocations: 5441)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 22.8ms | Allocations: 6030)
+  Rendered home/_header.html.erb (Duration: 5.9ms | Allocations: 659)
+  Rendered layout layouts/application.html.erb (Duration: 259.3ms | Allocations: 96631)
+Completed 200 OK in 299ms (Views: 267.1ms | ActiveRecord: 0.4ms | Allocations: 117507)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.8ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:04:39.239424"], ["updated_at", "2022-11-09 17:04:39.239424"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/edit.html.erb
+  Rendered questaos/_form.html.erb (Duration: 1.2ms | Allocations: 458)
+  Rendered questaos/edit.html.erb (Duration: 5.7ms | Allocations: 891)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:04:39.253192"], ["updated_at", "2022-11-09 17:04:39.253192"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.1ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:04:39.254330"], ["updated_at", "2022-11-09 17:04:39.254330"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/index.html.erb
+  Rendered questaos/_questao.html.erb (Duration: 0.6ms | Allocations: 161)
+  Rendered questaos/_questao.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered questaos/index.html.erb (Duration: 3.5ms | Allocations: 980)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering questaos/new.html.erb
+  Rendered questaos/_form.html.erb (Duration: 0.7ms | Allocations: 400)
+  Rendered questaos/new.html.erb (Duration: 0.9ms | Allocations: 487)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.3ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:04:39.266914"], ["updated_at", "2022-11-09 17:04:39.266914"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/show.html.erb
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered questaos/show.html.erb (Duration: 1.5ms | Allocations: 474)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2022-11-09 14:06:26 -0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-11-09 14:06:26 -0300
+Processing by QuestaosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 8.6ms | Allocations: 3291)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3827)
+  Rendered home/_header.html.erb (Duration: 11.3ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 85.4ms | Allocations: 38527)
+Completed 200 OK in 106ms (Views: 89.3ms | ActiveRecord: 0.5ms | Allocations: 58623)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (1.0ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:06:26.275154"], ["updated_at", "2022-11-09 17:06:26.275154"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/edit.html.erb
+  Rendered questaos/_form.html.erb (Duration: 0.9ms | Allocations: 458)
+  Rendered questaos/edit.html.erb (Duration: 2.7ms | Allocations: 891)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:06:26.303382"], ["updated_at", "2022-11-09 17:06:26.303382"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.1ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:06:26.304905"], ["updated_at", "2022-11-09 17:06:26.304905"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/index.html.erb
+  Rendered questaos/_questao.html.erb (Duration: 0.9ms | Allocations: 161)
+  Rendered questaos/_questao.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered questaos/index.html.erb (Duration: 3.6ms | Allocations: 931)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering questaos/new.html.erb
+  Rendered questaos/_form.html.erb (Duration: 0.7ms | Allocations: 400)
+  Rendered questaos/new.html.erb (Duration: 0.9ms | Allocations: 487)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:06:26.317841"], ["updated_at", "2022-11-09 17:06:26.317841"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/show.html.erb
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered questaos/show.html.erb (Duration: 1.3ms | Allocations: 474)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2022-11-09 14:11:10 -0300
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-11-09 14:11:10 -0300
+Processing by QuestaosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 8.0ms | Allocations: 3291)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3827)
+  Rendered home/_header.html.erb (Duration: 5.2ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 69.9ms | Allocations: 38957)
+Completed 200 OK in 91ms (Views: 73.8ms | ActiveRecord: 0.4ms | Allocations: 59053)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (1.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:11:10.419996"], ["updated_at", "2022-11-09 17:11:10.419996"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/edit.html.erb
+  Rendered questaos/_form.html.erb (Duration: 1.2ms | Allocations: 458)
+  Rendered questaos/edit.html.erb (Duration: 3.1ms | Allocations: 891)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:11:10.434623"], ["updated_at", "2022-11-09 17:11:10.434623"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.1ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:11:10.436289"], ["updated_at", "2022-11-09 17:11:10.436289"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/index.html.erb
+  Rendered questaos/_questao.html.erb (Duration: 0.9ms | Allocations: 161)
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered questaos/index.html.erb (Duration: 5.3ms | Allocations: 931)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering questaos/new.html.erb
+  Rendered questaos/_form.html.erb (Duration: 1.5ms | Allocations: 400)
+  Rendered questaos/new.html.erb (Duration: 1.9ms | Allocations: 487)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.5ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:11:10.509236"], ["updated_at", "2022-11-09 17:11:10.509236"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/show.html.erb
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered questaos/show.html.erb (Duration: 14.1ms | Allocations: 474)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-11-09 14:12:49 -0300
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 8.2ms | Allocations: 3283)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3821)
+  Rendered home/_header.html.erb (Duration: 17.6ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 101.2ms | Allocations: 38721)
+Completed 200 OK in 124ms (Views: 105.2ms | ActiveRecord: 0.4ms | Allocations: 58990)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-11-09 14:14:01 -0300
+Processing by QuestaosController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 7.1ms | Allocations: 3282)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3820)
+  Rendered home/_header.html.erb (Duration: 7.4ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 39004)
+Completed 200 OK in 86ms (Views: 66.6ms | ActiveRecord: 0.5ms | Allocations: 59273)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/questaos/new" for 127.0.0.1 at 2022-11-09 14:24:22 -0300
+Processing by QuestaosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/new.html.erb within layouts/application
+  Rendered questaos/_form.html.erb (Duration: 8.0ms | Allocations: 3292)
+  Rendered questaos/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3828)
+  Rendered home/_header.html.erb (Duration: 11.5ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 71.1ms | Allocations: 38944)
+Completed 200 OK in 93ms (Views: 75.0ms | ActiveRecord: 0.4ms | Allocations: 59039)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestao Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questaos"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (2.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:24:22.514225"], ["updated_at", "2022-11-09 17:24:22.514225"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/edit.html.erb
+  Rendered questaos/_form.html.erb (Duration: 0.9ms | Allocations: 458)
+  Rendered questaos/edit.html.erb (Duration: 2.5ms | Allocations: 891)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering questaos/new.html.erb
+  Rendered questaos/_form.html.erb (Duration: 0.7ms | Allocations: 400)
+  Rendered questaos/new.html.erb (Duration: 1.0ms | Allocations: 487)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (0.4ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["pergunta", "MyText"], ["created_at", "2022-11-09 17:24:22.533785"], ["updated_at", "2022-11-09 17:24:22.533785"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering questaos/show.html.erb
+  Rendered questaos/_questao.html.erb (Duration: 0.7ms | Allocations: 161)
+  Rendered questaos/show.html.erb (Duration: 3.3ms | Allocations: 921)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

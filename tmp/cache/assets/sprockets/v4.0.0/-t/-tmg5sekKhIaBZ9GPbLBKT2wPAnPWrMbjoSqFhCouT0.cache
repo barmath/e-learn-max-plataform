@@ -1,3 +1,9 @@
+<<<<<<<< HEAD:tmp/cache/assets/sprockets/v4.0.0/-t/-tmg5sekKhIaBZ9GPbLBKT2wPAnPWrMbjoSqFhCouT0.cache
 {:uriI"{file://app/assets/images/professor.jpeg?type=image/jpeg&id=c0f8e9f9e1fc057ac7b30b7d76df3c277adf44e61578ce9d407849cedbab6aab:ET:load_pathI"app/assets/images;T:filenameI"%app/assets/images/professor.jpeg;T:	nameI"professor;T:logical_pathI"professor.jpg;T:content_typeI"image/jpeg;T:source0:metadata{	:digest"%ÍOπJ#5≈e‡o+‘hçv˘Wv8ΩÊ˜<âπ:lengthi≈>:dependencieso:Set:
 @hash}
 I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=image/jpeg&file_type=image/jpeg;TTI"3file-digest://app/assets/images/professor.jpeg;TTF:environment_versionI"1.0;T:dependencies_digest"%ù‡8P—ô%“mΩJ´æÿü∆‘Q„}%"∂ﬁ^~í≠Â:idI"Ec0f8e9f9e1fc057ac7b30b7d76df3c277adf44e61578ce9d407849cedbab6aab;F
+========
+{:uriI"{file://app/assets/images/professor.jpeg?type=image/jpeg&id=756cd76ab0e2b14a33f043fb8fb9be513db40ba0c815e6b62bf8886a64f8bc57:ET:load_pathI"app/assets/images;T:filenameI"%app/assets/images/professor.jpeg;T:	nameI"professor;T:logical_pathI"professor.jpg;T:content_typeI"image/jpeg;T:source0:metadata{	:digest"%ÍOπJ#5≈e‡o+‘hçv˘Wv8ΩÊ˜<âπ:lengthi≈>:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=image/jpeg&file_type=image/jpeg;TTI"3file-digest://app/assets/images/professor.jpeg;TTF:environment_versionI"1.0;T:dependencies_digest"%‘2<*E(Úﬁj‰≤√Í~‘‰LVÖ∆ÏêÓ„ˆ„áì√:idI"E756cd76ab0e2b14a33f043fb8fb9be513db40ba0c815e6b62bf8886a64f8bc57;F
+>>>>>>>> main:tmp/cache/assets/sprockets/v4.0.0/Pu/Pup5muTZk0dW7SqnGEYoUrsMhh9jhGcLU9C3mZUaZ4Q.cache

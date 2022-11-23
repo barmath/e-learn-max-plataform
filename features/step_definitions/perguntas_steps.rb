@@ -20,9 +20,9 @@ Então('ele deve salvar a questão no banco de dados') do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Dado('que estou na tela de Nova Pergunta') do
-  pending # Write code here that turns the phrase above into concrete actions
-end
+# Dado('que estou na tela de Nova Pergunta') do
+#   pending # Write code here that turns the phrase above into concrete actions
+# end
 
 Quando('aperto o botão Cancelar') do
   pending # Write code here that turns the phrase above into concrete actions
