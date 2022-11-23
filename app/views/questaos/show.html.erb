@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @questao %>
+
+<div>
+  <%= link_to "Editar pergunta", edit_questao_path(@questao) %> |
+  <%= link_to "Voltar para lista de perguntas", questaos_path %>
+
+  <%= button_to "Excluir pergunta", @questao, method: :delete %>
+</div>

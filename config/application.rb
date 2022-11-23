@@ -2,6 +2,8 @@ require_relative "boot"
 
 require "rails/all"
 
+require 'devise'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -10,10 +12,10 @@ module Myapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-
-    config.web_console.whitelisted_ips = '172.18.0.1'
-    config.web_console.whitelisted_ips = '172.18.0.1/16'
-    config.web_console.whitelisted_ips = '192.168.0.0/16'
+    
+    #config.web_console.whitelisted_ips = '172.18.0.1'
+    #config.web_console.whitelisted_ips = '172.18.0.1/16'
+    #config.web_console.whitelisted_ips = '192.168.0.0/16'
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -23,3 +25,4 @@ module Myapp
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+

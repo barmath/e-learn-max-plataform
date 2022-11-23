@@ -1,7 +1,10 @@
 source "https://rubygems.org"
+
+ruby "3.1.2"
+
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.6"
+ruby "3.1.2"
 
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "sprockets-rails"
@@ -12,6 +15,10 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
+gem 'coveralls_reborn', '~> 0.25.0', require: false
+gem "sqlite3", "~> 1.4"
+gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'rolify'
 
 gem 'pg'
 group :development, :test do
@@ -22,17 +29,16 @@ group :development, :test do
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
   # Use sqlite3 as the database for Active Record
-  gem "sqlite3", "~> 1.4"
+  
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
-  gem 'devise', '~> 4.8', '>= 4.8.1'
-
+  
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
-
+  gem 'web-console'
+  
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -45,5 +51,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-
+  
 end
