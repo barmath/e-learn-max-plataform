@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="modificações do aluno">
+    <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="Adicionando about us">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/_alunos_index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/_alunos_index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/about.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/about.html.erb" afterDir="false" />
@@ -31,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/galdu/workspace/ESI/e-learn-max-plataform",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/galdu/workspace/ESI/e-learn-max-plataform&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Rails.Development: e-learn-max-plataform">
     <configuration name="Development: e-learn-max-plataform" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="e-learn-max-plataform" />
@@ -158,7 +158,8 @@
       <workItem from="1667756587767" duration="2589000" />
       <workItem from="1667763113305" duration="1739000" />
       <workItem from="1667765187758" duration="2562000" />
-      <workItem from="1669251031924" duration="1995000" />
+      <workItem from="1669251031924" duration="3395000" />
+      <workItem from="1669254445181" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="modificações do aluno">
       <created>1669251245244</created>
@@ -167,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669251245244</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adicionando about us">
+      <created>1669253057008</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669253057008</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modificações do aluno" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificações do aluno" />
+    <MESSAGE value="Adicionando about us" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando about us" />
   </component>
 </project>
