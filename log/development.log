@@ -14274,3 +14274,98 @@ ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
 ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
   
+Started GET "/" for 127.0.0.1 at 2022-11-23 23:05:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 0.6ms | Allocations: 168)
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 61.5ms | Allocations: 22166)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 25613)
+Completed 200 OK in 82ms (Views: 70.9ms | ActiveRecord: 3.0ms | Allocations: 29039)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-23 23:05:47 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-23 23:05:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/home/about" for 127.0.0.1 at 2022-11-23 23:05:53 -0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 207)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 2.6ms | Allocations: 1101)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2269)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 2577)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-23 23:05:53 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-23 23:05:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/home/about" for 127.0.0.1 at 2022-11-23 23:06:07 -0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 1795)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms | Allocations: 2059)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-23 23:06:07 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-23 23:06:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-23 23:06:08 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 3521)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 4386)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 1.4ms | Allocations: 4648)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-23 23:06:08 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-23 23:06:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
