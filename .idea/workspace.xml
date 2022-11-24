@@ -6,25 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="first commit branch story5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/pergunta_controller.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/prova_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/prova_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/pergunta_helper.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/perguntum.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/prova/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/prova/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.last_run.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.12.3/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/assets/0.12.3/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221014233606_create_pergunta.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/pergunta_helper_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/perguntum_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/pergunta_spec.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/27a4f5987e41a1" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/27a4f5987e41a1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/42e43cfaff68ab" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/42e43cfaff68ab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/8c59de8a415976" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/8c59de8a415976" afterDir="false" />
@@ -1750,7 +1732,7 @@
       <workItem from="1667765187758" duration="2562000" />
       <workItem from="1669234413623" duration="569000" />
       <workItem from="1669235861758" duration="822000" />
-      <workItem from="1669242119819" duration="3733000" />
+      <workItem from="1669242119819" duration="6666000" />
     </task>
     <servers />
   </component>

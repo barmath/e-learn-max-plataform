@@ -24,4 +24,8 @@ class ProvaController < ApplicationController
       end
     end
   end
+
+  def add_questao
+
+  end
 end
