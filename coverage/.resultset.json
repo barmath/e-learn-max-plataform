@@ -68,6 +68,35 @@
       "/myapp/app/controllers/prova_controller.rb": {
         "lines": [
           0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
           0
         ],
         "branches": {
@@ -258,6 +287,14 @@
         "branches": {
         }
       },
+      "/myapp/app/models/questaos_da_prova.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/myapp/app/models/role.rb": {
         "lines": [
           0,
@@ -310,7 +347,7 @@
         }
       }
     },
-    "timestamp": 1669235772
+    "timestamp": 1669313700
   },
   "Cucumber Features": {
     "coverage": {

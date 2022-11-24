@@ -1,0 +1,2 @@
+class QuestaosDaProva < ApplicationRecord
+end

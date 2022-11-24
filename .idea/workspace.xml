@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="first commit branch story5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/prova_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/prova_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20221014233511_create_provas.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221014233511_create_provas.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20221124000051_prova.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221124000051_prova.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/27a4f5987e41a1" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/27a4f5987e41a1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/42e43cfaff68ab" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/42e43cfaff68ab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/8c59de8a415976" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/8c59de8a415976" afterDir="false" />
@@ -1732,7 +1736,12 @@
       <workItem from="1667765187758" duration="2562000" />
       <workItem from="1669234413623" duration="569000" />
       <workItem from="1669235861758" duration="822000" />
-      <workItem from="1669242119819" duration="6666000" />
+      <workItem from="1669242119819" duration="6743000" />
+      <workItem from="1669295262178" duration="30000" />
+      <workItem from="1669295767654" duration="14000" />
+      <workItem from="1669295997325" duration="4000" />
+      <workItem from="1669296563994" duration="14000" />
+      <workItem from="1669309818447" duration="1675000" />
     </task>
     <servers />
   </component>
