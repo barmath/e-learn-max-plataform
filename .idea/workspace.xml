@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="terminando parte de estilização do aluno">
-      <change afterPath="$PROJECT_DIR$/features/telainicialaluno.feature" afterDir="false" />
+    <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="Testes da tela inicial do aluno">
+      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,7 @@
       <workItem from="1667763113305" duration="1739000" />
       <workItem from="1667765187758" duration="2562000" />
       <workItem from="1669251031924" duration="3395000" />
-      <workItem from="1669254445181" duration="1421000" />
+      <workItem from="1669254445181" duration="1739000" />
     </task>
     <task id="LOCAL-00001" summary="modificações do aluno">
       <created>1669251245244</created>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669255464391</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Testes da tela inicial do aluno">
+      <created>1669255878124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669255878124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +220,7 @@
     <MESSAGE value="modificações do aluno" />
     <MESSAGE value="Adicionando about us" />
     <MESSAGE value="terminando parte de estilização do aluno" />
-    <option name="LAST_COMMIT_MESSAGE" value="terminando parte de estilização do aluno" />
+    <MESSAGE value="Testes da tela inicial do aluno" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testes da tela inicial do aluno" />
   </component>
 </project>
