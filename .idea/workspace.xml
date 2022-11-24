@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="first commit branch story5" />
+    <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="teste">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/about.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/about.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/load-path-cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="e2711785179fae3113c38b18cc61b34df5b09c4b" />
+        <entry key="$PROJECT_DIR$" value="estilizacao_feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +42,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
@@ -152,7 +159,45 @@
       <workItem from="1667756587767" duration="2589000" />
       <workItem from="1667763113305" duration="1739000" />
       <workItem from="1667765187758" duration="2562000" />
+      <workItem from="1669251031924" duration="3395000" />
+      <workItem from="1669254445181" duration="1885000" />
     </task>
+    <task id="LOCAL-00001" summary="modificações do aluno">
+      <created>1669251245244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669251245244</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adicionando about us">
+      <created>1669253057008</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669253057008</updated>
+    </task>
+    <task id="LOCAL-00003" summary="terminando parte de estilização do aluno">
+      <created>1669255464391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669255464391</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Testes da tela inicial do aluno">
+      <created>1669255878124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669255878124</updated>
+    </task>
+    <task id="LOCAL-00005" summary="teste">
+      <created>1669256197116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669256197116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,10 +208,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/featureEstilizacao" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modificações do aluno" />
+    <MESSAGE value="Adicionando about us" />
+    <MESSAGE value="terminando parte de estilização do aluno" />
+    <MESSAGE value="Testes da tela inicial do aluno" />
+    <MESSAGE value="teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="teste" />
   </component>
 </project>
