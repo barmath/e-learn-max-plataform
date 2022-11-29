@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_09_131133) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_29_192323) do
   create_table "pergunta", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -19,12 +19,21 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_131133) do
   create_table "provas", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_provas_on_user_id"
   end
 
   create_table "questaos", force: :cascade do |t|
     t.text "pergunta"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "questaos_da_provas", force: :cascade do |t|
+    t.integer "questaos_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["questaos_id"], name: "index_questaos_da_provas_on_questaos_id"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -58,4 +67,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_131133) do
     t.index ["user_id"], name: "index_users_roles_on_user_id"
   end
 
+  add_foreign_key "questaos_da_provas", "questaos", column: "questaos_id"
 end
