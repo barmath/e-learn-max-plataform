@@ -1,0 +1,12 @@
+Index: features/telainicialaluno.feature
+===================================================================
+diff --git a/features/telainicialaluno.feature b/features/telainicialaluno.feature
+--- a/features/telainicialaluno.feature	
++++ b/features/telainicialaluno.feature	
+@@ -1,6 +1,4 @@
+ # language: pt
+-Tela inicial do Aluno
+-
+ Funcionalidade:Tela inicial do aluno
+   Como aluno
+   Eu quero ver provas disponíveis ou pendentes
