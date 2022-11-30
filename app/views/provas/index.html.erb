@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Provas</h1>
+
+<div id="provas">
+  <% @provas.each do |prova| %>
+    <% if prova.user == current_user %>
+      <%= render prova %>
+        <p>
+          <%= link_to "Show this prova", prova %>
+        </p>
+    <% end %>
+
+  <% end %>
+</div>
+
+<%= link_to "New prova", new_prova_path %>
