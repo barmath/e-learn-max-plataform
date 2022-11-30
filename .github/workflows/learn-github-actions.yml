@@ -110,7 +110,6 @@ jobs:
           bundle update --bundler
           bundle exec rails db:setup
           bundle exec rake db:migrate
-          bundle exec rspec spec
           bundle exec cucumber 
       - name: Coveralls
         env:
