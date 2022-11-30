@@ -2,10 +2,10 @@ name: learn-github-actions
 on:
   pull_request:
     branches:
-      - main
+      - grotta
   push:
     branches:
-      - main
+      - grotta
 
 jobs:
 #  services:
