@@ -6,6 +6,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :provas
+
   after_create :assign_default_role
 
   validate :must_have_a_role, on: :update 

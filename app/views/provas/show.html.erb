@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @prova %>
+
+<div>
+  <%= link_to "Edit this prova", edit_prova_path(@prova) %> |
+  <%= link_to "Back to provas", provas_path %>
+
+  <%= button_to "Destroy this prova", @prova, method: :delete %>
+</div>
