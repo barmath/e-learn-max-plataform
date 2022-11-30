@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="first commit branch story5">
-      <change afterPath="$PROJECT_DIR$/app/views/provas/create.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/provas/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/provas/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/provas/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/prova_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/provas_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/prova_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/provas_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/prova.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/prova.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/prova/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/provas/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/prova/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/provas/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221014233511_create_provas.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221014233511_create_provas.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221124181455_create_questaos_da_provas.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221124181455_create_questaos_da_provas.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/prova_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/provas_helper_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/prova_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/provas_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/27a4f5987e41a1" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/27a4f5987e41a1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/42e43cfaff68ab" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/42e43cfaff68ab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/8c59de8a415976" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap/compile-cache-iseq/00/8c59de8a415976" afterDir="false" />
@@ -1759,6 +1741,7 @@
       <workItem from="1669749861687" duration="48000" />
       <workItem from="1669750014552" duration="134000" />
       <workItem from="1669750189381" duration="3462000" />
+      <workItem from="1669813520085" duration="1589000" />
     </task>
     <servers />
   </component>
