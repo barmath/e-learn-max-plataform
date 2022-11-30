@@ -18767,3 +18767,1337 @@ ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
   
 ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:42:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (1.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 11]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 1.2ms | Allocations: 130)
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 11]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 11]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 132.3ms | Allocations: 22170)
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 140.5ms | Allocations: 25617)
+Completed 200 OK in 155ms (Views: 137.5ms | ActiveRecord: 7.4ms | Allocations: 29055)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:42:15 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:42:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:42:15 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:42:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:42:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2022-11-30 13:42:17 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.1ms | Allocations: 4274)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:42:17 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 386)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 163)
+  Rendered layouts/_alerts.html.erb (Duration: 1.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1583)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 1892)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:42:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-11-30 13:42:19 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 724)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3967)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 4949)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 6375)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:42:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:42:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-11-30 13:42:23 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aluno@s.s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aluno@s.s"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.5ms | Allocations: 1969)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aluno@s.s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1405)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2233)
+Completed 200 OK in 305ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3522)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-11-30 13:42:25 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aluno@s.s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aluno@s.s"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms | Allocations: 1621)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aluno@s.s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1270)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2063)
+Completed 200 OK in 298ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2583)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-11-30 13:42:29 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aluno@a.a", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aluno@a.a"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 295ms (ActiveRecord: 0.1ms | Allocations: 2616)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:42:29 -0300
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:7
+  Rendered home/_professor_index.html.erb (Duration: 1.7ms | Allocations: 129)
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 10]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3772)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 188)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4715)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.7ms | Allocations: 5024)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:42:29 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:42:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/10/edit" for 127.0.0.1 at 2022-11-30 13:42:43 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/views/users/edit.html.erb:2
+  [1m[36mRole Pluck (0.3ms)[0m  [1m[34mSELECT "roles"."id" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 10]]
+  ↳ app/views/users/edit.html.erb:2
+  Rendered users/edit.html.erb within layouts/application (Duration: 10.6ms | Allocations: 4104)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 991)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5893)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.9ms | Allocations: 7874)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:42:44 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:42:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-11-30 13:43:11 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 4.3ms | Allocations: 1771)
+  Rendered provas/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2132)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3140)
+Completed 200 OK in 29ms (Views: 8.8ms | ActiveRecord: 0.9ms | Allocations: 11085)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:12 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:43:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/provas" for 127.0.0.1 at 2022-11-30 13:43:18 -0300
+Processing by ProvasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "prova"=>{"titulo"=>"priva de tadi", "instrucoes"=>"t", "user_id"=>"10"}, "commit"=>"Create Prova"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+  [1m[36mProva Create (4.7ms)[0m  [1m[32mINSERT INTO "provas" ("titulo", "instrucoes", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "priva de tadi"], ["instrucoes", "t"], ["created_at", "2022-11-30 16:43:18.522711"], ["updated_at", "2022-11-30 16:43:18.522711"], ["user_id", 10]]
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+Redirected to http://127.0.0.1:3000/provas/11
+Completed 302 Found in 15ms (ActiveRecord: 6.1ms | Allocations: 4707)
+
+
+Started GET "/provas/11" for 127.0.0.1 at 2022-11-30 13:43:18 -0300
+Processing by ProvasController#show as TURBO_STREAM
+  Parameters: {"id"=>"11"}
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 1.5ms | Allocations: 248)
+  Rendered provas/show.html.erb within layouts/application (Duration: 23.0ms | Allocations: 7743)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 2.6ms | Allocations: 1079)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 9584)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.4ms | Allocations: 11085)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:18 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:43:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-11-30 13:43:22 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered provas/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 5711)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6557)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 6933)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:43:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2022-11-30 13:43:29 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 1807)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:43:29 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 257)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 152)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1164)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1427)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:43:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-11-30 13:43:31 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1314)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2145)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2761)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:43:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-11-30 13:43:38 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  [1m[36mRole Pluck (0.2ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 10]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mRole Pluck (0.1ms)[0m  [1m[34mSELECT "roles"."name" FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2648)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3685)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.5ms | Allocations: 4015)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:38 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:43:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-11-30 13:43:49 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"t@t.t", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "t@t.t"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 293ms (ActiveRecord: 0.1ms | Allocations: 2342)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:43:49 -0300
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 11]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 11]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 11]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3482)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 187)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4420)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.7ms | Allocations: 4684)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:43:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:43:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-11-30 13:44:01 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4202)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5047)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.5ms | Allocations: 5319)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:44:01 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:44:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/9" for 127.0.0.1 at 2022-11-30 13:44:13 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProva Load (0.1ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered provas/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 556)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 931)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2146)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 2891)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:44:13 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:44:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started DELETE "/provas/9" for 127.0.0.1 at 2022-11-30 13:44:20 -0300
+Processing by ProvasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"9"}
+  [1m[36mProva Load (0.1ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."user_id" = ? AND "provas"."id" = ? LIMIT ?[0m  [["user_id", 11], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:64:in `correct_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/provas_controller.rb:55:in `destroy'
+  [1m[36mProva Destroy (3.4ms)[0m  [1m[31mDELETE FROM "provas" WHERE "provas"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/provas_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/provas_controller.rb:55:in `destroy'
+Redirected to http://127.0.0.1:3000/provas
+Completed 302 Found in 14ms (ActiveRecord: 5.1ms | Allocations: 4403)
+
+
+Started GET "/provas" for 127.0.0.1 at 2022-11-30 13:44:20 -0300
+Processing by ProvasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3430)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4348)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.4ms | Allocations: 4625)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:44:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:44:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-11-30 13:44:32 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 1.5ms | Allocations: 913)
+  Rendered provas/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1000)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1855)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3573)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:44:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:44:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/questaos" for 127.0.0.1 at 2022-11-30 13:45:43 -0300
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.6ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 1.4ms | Allocations: 167)
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 4134)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 5.1ms | Allocations: 1023)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 5959)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 1.9ms | Allocations: 7283)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:45:43 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:45:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/questaos/2" for 127.0.0.1 at 2022-11-30 13:45:50 -0300
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/show.html.erb within layouts/application
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered questaos/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 769)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 931)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2359)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.4ms | Allocations: 3823)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:45:50 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:45:50 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:46:11 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:46:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/questaos" for 127.0.0.1 at 2022-11-30 13:46:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.1ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1886)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3769)
+Completed 200 OK in 31ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 18679)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:46:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/questaos" for 127.0.0.1 at 2022-11-30 13:47:43 -0300
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.2ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:6
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1032)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 931)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2630)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 2903)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:47:43 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:47:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2022-11-30 13:48:00 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 1785)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:48:00 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 269)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 152)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1176)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-11-30 13:48:02 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 213)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 152)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2285)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3278)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4533)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:02 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-11-30 13:48:12 -0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@a.a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "a@a.a"], ["encrypted_password", "$2a$12$N4UYX/ombeKfycYfycoC4ea4RfsG4RRSjsNYmwZKjNl9C4GLB.8g6"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["created_at", "2022-11-30 16:48:12.850701"], ["updated_at", "2022-11-30 16:48:12.850701"]]
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/models/user.rb:18:in `assign_default_role'
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "aluno"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `assign_default_role'
+  [1m[36mUser::HABTM_Roles Create (0.3ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 12], ["role_id", 5]]
+  ↳ app/models/user.rb:18:in `assign_default_role'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 319ms (ActiveRecord: 2.6ms | Allocations: 12532)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:48:12 -0300
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 12]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 12]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 12]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3500)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 188)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4437)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.1ms | Allocations: 4702)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:12 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-11-30 13:48:18 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 3404)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 4250)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 1.0ms | Allocations: 4526)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:18 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-11-30 13:48:24 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 1.9ms | Allocations: 913)
+  Rendered provas/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1000)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1855)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3572)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/provas" for 127.0.0.1 at 2022-11-30 13:48:28 -0300
+Processing by ProvasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "prova"=>{"titulo"=>"Prova de MVGA", "instrucoes"=>"Fazer prova a lapis ", "user_id"=>"12"}, "commit"=>"Create Prova"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+  [1m[36mProva Create (0.6ms)[0m  [1m[32mINSERT INTO "provas" ("titulo", "instrucoes", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "Prova de MVGA"], ["instrucoes", "Fazer prova a lapis "], ["created_at", "2022-11-30 16:48:28.820051"], ["updated_at", "2022-11-30 16:48:28.820051"], ["user_id", 12]]
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+Redirected to http://127.0.0.1:3000/provas/12
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms | Allocations: 3504)
+
+
+Started GET "/provas/12" for 127.0.0.1 at 2022-11-30 13:48:28 -0300
+Processing by ProvasController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+  [1m[36mProva Load (0.1ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered provas/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 615)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 931)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2274)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 3021)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-11-30 13:48:30 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.1ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/_prova.html.erb (Duration: 0.6ms | Allocations: 21)
+  Rendered provas/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4175)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5020)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.5ms | Allocations: 5295)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:30 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2022-11-30 13:48:36 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 1695)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:48:36 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 232)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 152)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1138)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 1400)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-11-30 13:48:39 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 3427)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 4243)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.9ms | Allocations: 4515)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:48:39 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:48:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-30 13:49:15 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 240)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1070)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1332)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:49:15 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:49:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-11-30 13:49:18 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1278)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2109)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2692)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:49:18 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:49:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-11-30 13:49:22 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1255)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2094)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2628)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 13:49:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 13:49:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  [1m[35m (537.9ms)[0m  [1m[35mCREATE DATABASE "flatiron_mod3_development" ENCODING = 'utf8'[0m
+  [1m[35m (430.8ms)[0m  [1m[35mCREATE DATABASE "flatiron_mod3_test" ENCODING = 'utf8'[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5904349680232060365)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20221010130110)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221010130110"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateQuestaos (20221016214132)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "questaos" ("id" bigserial primary key, "pergunta" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221016214132"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RolifyCreateRoles (20221109131133)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "name" character varying, "resource_type" character varying, "resource_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_roles_on_resource" ON "roles" ("resource_type", "resource_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" bigint, "role_id" bigint)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221109131133"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProvas (20221129210550)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "provas" ("id" bigserial primary key, "titulo" character varying, "instrucoes" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221129210550"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToProvas (20221130003907)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mALTER TABLE "provas" ADD "user_id" integer[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE INDEX "index_provas_on_user_id" ON "provas" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221130003907"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (5.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-30 18:02:36.723891"], ["updated_at", "2022-11-30 18:02:36.723891"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5904349680232060365)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-11-30 15:04:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 942)
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4453)
+Completed 200 OK in 31ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 7894)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:00 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /Users/matheusbarbosa/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /Users/matheusbarbosa/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-11-30 15:04:02 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 724)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.9ms | Allocations: 4967)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 5950)
+Completed 200 OK in 50ms (Views: 27.4ms | ActiveRecord: 4.5ms | Allocations: 13200)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:02 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-11-30 15:04:05 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aluno@s.s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "aluno@s.s"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 33ms (ActiveRecord: 3.7ms | Allocations: 3609)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aluno@s.s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1407)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2236)
+Completed 200 OK in 313ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3539)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-11-30 15:04:08 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 216)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 152)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2288)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3281)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4554)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-11-30 15:04:12 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 859)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2180)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.9ms | Allocations: 2978)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:12 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-11-30 15:04:14 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1326)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2165)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2727)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-11-30 15:04:27 -0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"t@t.t", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "t@t.t"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "t@t.t"], ["encrypted_password", "$2a$12$U1.Jq3MpwX0/NRP/U7Npu.qL3fJioZ/taxBmx9mqzev9Hg1uyUDEu"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["created_at", "2022-11-30 18:04:27.755767"], ["updated_at", "2022-11-30 18:04:27.755767"]]
+  [1m[36mRole Load (3.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/models/user.rb:18:in `assign_default_role'
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."name" = $1 AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT $2[0m  [["name", "aluno"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `assign_default_role'
+  [1m[36mRole Create (0.7ms)[0m  [1m[32mINSERT INTO "roles" ("name", "resource_type", "resource_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "aluno"], ["resource_type", nil], ["resource_id", nil], ["created_at", "2022-11-30 18:04:27.805266"], ["updated_at", "2022-11-30 18:04:27.805266"]]
+  ↳ app/models/user.rb:18:in `assign_default_role'
+  [1m[36mUser::HABTM_Roles Create (0.5ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES ($1, $2)[0m  [["user_id", 1], ["role_id", 1]]
+  ↳ app/models/user.rb:18:in `assign_default_role'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 374ms (ActiveRecord: 12.1ms | Allocations: 25541)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-30 15:04:27 -0300
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 0.9ms | Allocations: 131)
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 1]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 4061)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 207)
+  Rendered layouts/_alerts.html.erb (Duration: 1.3ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 5248)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 3.2ms | Allocations: 5576)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-11-30 15:04:33 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (5.0ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  Rendered provas/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1339)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 1070)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3217)
+Completed 200 OK in 21ms (Views: 11.0ms | ActiveRecord: 5.3ms | Allocations: 4912)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:33 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-11-30 15:04:37 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 4.4ms | Allocations: 1728)
+  Rendered provas/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2030)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2939)
+Completed 200 OK in 22ms (Views: 7.8ms | ActiveRecord: 2.3ms | Allocations: 8746)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started POST "/provas" for 127.0.0.1 at 2022-11-30 15:04:39 -0300
+Processing by ProvasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "prova"=>{"titulo"=>"3", "instrucoes"=>"3", "user_id"=>"1"}, "commit"=>"Create Prova"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+  [1m[36mProva Create (1.2ms)[0m  [1m[32mINSERT INTO "provas" ("titulo", "instrucoes", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["titulo", "3"], ["instrucoes", "3"], ["created_at", "2022-11-30 18:04:39.891939"], ["updated_at", "2022-11-30 18:04:39.891939"], ["user_id", 1]]
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/provas_controller.rb:30:in `block in create'
+Redirected to http://127.0.0.1:3000/provas/1
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms | Allocations: 4069)
+
+
+Started GET "/provas/1" for 127.0.0.1 at 2022-11-30 15:04:39 -0300
+Processing by ProvasController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 1.6ms | Allocations: 248)
+  Rendered provas/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1394)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 3.0ms | Allocations: 1124)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3280)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.6ms | Allocations: 4773)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:04:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:04:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-11-30 15:06:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.4ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 1.1ms | Allocations: 279)
+  Rendered provas/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2082)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 15.7ms | Allocations: 5981)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 10774)
+Completed 200 OK in 64ms (Views: 32.3ms | ActiveRecord: 7.5ms | Allocations: 22058)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-11-30 15:06:23 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-11-30 15:06:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
