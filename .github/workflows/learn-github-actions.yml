@@ -108,6 +108,7 @@ jobs:
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
         run: |
           bundle update --bundler
+          bundle exec rails db:setup
           bundle exec rake db:migrate
           bundle exec rspec spec
           bundle exec cucumber 
