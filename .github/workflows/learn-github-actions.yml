@@ -82,7 +82,7 @@ jobs:
           bundle update --bundler
           bundle exec rake db:migrate
           bundle exec rspec spec
-          bundle exec cucumber
+          bundle exec cucumber 
       - name: Coveralls
         env:
           RAILS_ENV: test
@@ -95,5 +95,5 @@ jobs:
         env:
           # The hostname used to communicate with the PostgreSQL service container
           POSTGRES_HOST: postgres
-          # The default PostgreSQL port
+          # The default PostgreSQL porta
           POSTGRES_PORT: 5432
