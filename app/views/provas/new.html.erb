@@ -4,6 +4,10 @@
 
 <br>
 
+<%= @prova.id %>
+
 <div>
-  <%= link_to "Back to provas", provas_path %>
+  <%= link_to "Nova Pergunta", new_questao_path, :prova => @prova %>
+  <br/>
+  <%= link_to "Back to provas", provas_path%>
 </div>

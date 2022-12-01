@@ -15,6 +15,8 @@ class ProvasController < ApplicationController
   # GET /provas/new
   def new
     @prova = current_user.provas.build
+    #@questao = Questao.find(1)
+    #redirect_to questao_url(@questao)
   end
 
   # GET /provas/1/edit

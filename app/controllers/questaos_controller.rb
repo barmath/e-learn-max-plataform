@@ -13,6 +13,7 @@ class QuestaosController < ApplicationController
   # GET /questaos/new
   def new
     @questao = Questao.new
+    @prova = Prova.last(1)[0]
   end
 
   # GET /questaos/1/edit
@@ -65,6 +66,6 @@ class QuestaosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def questao_params
-      params.require(:questao).permit(:pergunta)
+      params.require(:questao).permit(:pergunta,:prova_id)
     end
 end

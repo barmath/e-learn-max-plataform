@@ -12,9 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :pergunta, style: "display: block" %>
+    <%= form.label :pergunta, style: "display: block"%>
     <%= form.text_area :pergunta %>
   </div>
+
+  <%= form.number_field :prova_id,
+      id: :questao_prova_id,
+      value: @prova.id,
+      type: :hidden  %>
+  </div>
+
+  <%= @prova.id %>        
 
   <div>
     <%= form.submit 'Salvar Pergunta' %>
