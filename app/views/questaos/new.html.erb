@@ -1,9 +1,31 @@
-<h1>Nova Pergunta</h1>
-
-<%= render "form", questao: @questao %>
-
-<br>
-
-<div>
-  <%= link_to "Voltar para lista de questões", questaos_path %>
+<div class="jumbotron">
+  <h1 class="display-4">Questões</h1>
+  <p class="lead">Adicionar nova Pergunta a prova</p>
+  <hr class="my-4">
+  <div class="alinhamento">
+    <div class="card" style="width: 18rem;">
+      <img src="https://www.sulinfoco.com.br/wp-content/uploads/2019/07/professor.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+      <div class="card-body">
+        <%= render "form", questao: @questao %>
+        <div>
+          <button type="button" class="btn alinhamento"><%= link_to "Voltar para lista de questões", questaos_path %></button>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<style>
+    .alinhamento{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
+
+
+
+
+
