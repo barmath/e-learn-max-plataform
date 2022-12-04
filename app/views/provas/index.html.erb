@@ -1,17 +1,38 @@
 <p style="color: green"><%= notice %></p>
+<div class="jumbotron">
+  <h1 class="display-4">Provas</h1>
+  <p class="lead">Provas criadas</p>
+  <hr class="my-4">
+  <div class="alinhamento">
+    <div class="card" style="width: 18rem;">
+      <img src="https://www.sulinfoco.com.br/wp-content/uploads/2019/07/professor.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+      <div class="card-body">
+        <div id="questaos">
+          <div id="provas">
+            <% @provas.each do |prova| %>
+              <% if prova.user == current_user %>
+                <%= render prova %>
+                <p>
+                  <%= link_to "Show this prova", prova %>
+                </p>
+              <% end %>
 
-<h1>Provas</h1>
-
-<div id="provas">
-  <% @provas.each do |prova| %>
-    <% if prova.user == current_user %>
-      <%= render prova %>
-        <p>
-          <%= link_to "Show this prova", prova %>
-        </p>
-    <% end %>
-
-  <% end %>
+            <% end %>
+          </div>
+        </div>
+        <div>
+          <%= link_to "New prova", new_prova_path %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<%= link_to "New prova", new_prova_path %>
+<style>
+        .alinhamento{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+        }
+</style>

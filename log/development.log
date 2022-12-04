@@ -7860,3 +7860,601 @@ Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 18:36:52 -0300
   
 ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:13:27 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.8ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/_prova.html.erb (Duration: 1.0ms | Allocations: 198)
+  Rendered provas/index.html.erb within layouts/application (Duration: 41.8ms | Allocations: 6230)
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 7840)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 13.9ms | Allocations: 8720)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:13:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:13:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:18:45 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:7
+  Rendered provas/_prova.html.erb (Duration: 0.6ms | Allocations: 199)
+  Rendered provas/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 5305)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 5390)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms | Allocations: 6252)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;           @questaos.each do |questao| 
+                             ^^^^^):
+    26:       <img src="https://www.sulinfoco.com.br/wp-content/uploads/2019/07/professor.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+    27:       <div class="card-body">
+    28:         <div id="questaos">
+    29:           <% @questaos.each do |questao| %>
+    30:             <%= render questao %>
+    31:             <p>
+    32:               <%= link_to "Mostrar perguntas", questao %>
+  
+app/views/provas/index.html.erb:29
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:20:25 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 1.1ms | Allocations: 198)
+  Rendered provas/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 3260)
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 4870)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 1.0ms | Allocations: 5754)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:20:25 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:20:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:20:30 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered provas/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 783)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 4.4ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2424)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.6ms | Allocations: 3295)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:20:30 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:20:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:21:26 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.4ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.7ms | Allocations: 200)
+  Rendered provas/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1173)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 4.3ms | Allocations: 1438)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3711)
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 0.7ms | Allocations: 5065)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:21:26 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:21:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:21:30 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered provas/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2645)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3509)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.9ms | Allocations: 3880)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:21:30 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:21:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-12-04 19:21:31 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 3.3ms | Allocations: 1340)
+  Rendered provas/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1635)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2508)
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 4326)
+
+
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:21:32 -0300
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:21:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:21:35 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered provas/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2364)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3262)
+Completed 200 OK in 35ms (Views: 30.3ms | ActiveRecord: 2.8ms | Allocations: 3747)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:21:35 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:21:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:21:37 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.7ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered provas/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 553)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 13.6ms | Allocations: 1130)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2360)
+Completed 200 OK in 25ms (Views: 17.8ms | ActiveRecord: 1.4ms | Allocations: 3132)
+
+
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:21:37 -0300
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:21:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:27:13 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.5ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered provas/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 571)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 967)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2215)
+Completed 200 OK in 25ms (Views: 7.3ms | ActiveRecord: 6.1ms | Allocations: 5968)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:27:14 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:27:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:28:00 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.6ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 5.9ms | Allocations: 200)
+  Rendered provas/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1258)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 21.2ms | Allocations: 1438)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 3796)
+Completed 200 OK in 54ms (Views: 45.7ms | ActiveRecord: 1.1ms | Allocations: 5150)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:28:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:28:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1/edit" for 127.0.0.1 at 2022-12-04 19:28:03 -0300
+Processing by ProvasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProva Load (0.7ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."user_id" = $1 AND "provas"."id" = $2 LIMIT $3[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:64:in `correct_user'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/edit.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 3.2ms | Allocations: 1420)
+  Rendered provas/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1749)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2614)
+Completed 200 OK in 22ms (Views: 9.2ms | ActiveRecord: 1.5ms | Allocations: 5554)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:28:03 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:28:03 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1/edit" for 127.0.0.1 at 2022-12-04 19:29:04 -0300
+Processing by ProvasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProva Load (0.6ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."user_id" = $1 AND "provas"."id" = $2 LIMIT $3[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:64:in `correct_user'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/edit.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 3.0ms | Allocations: 1514)
+  Rendered provas/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1918)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3523)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 1.3ms | Allocations: 6904)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:04 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:29:06 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.6ms | Allocations: 193)
+  Rendered provas/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1054)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 4.6ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2777)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.7ms | Allocations: 3701)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:06 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:29:07 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.5ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered provas/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2640)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3503)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 1.6ms | Allocations: 3854)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:07 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-12-04 19:29:08 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 3.0ms | Allocations: 903)
+  Rendered provas/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1142)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2015)
+Completed 200 OK in 18ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:08 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:29:09 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (1.9ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered provas/index.html.erb within layouts/application (Duration: 32.0ms | Allocations: 2572)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 3732)
+Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 3.3ms | Allocations: 4009)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:09 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:29:10 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.4ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered provas/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 565)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 4.8ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2206)
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 0.8ms | Allocations: 2969)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:10 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1/edit" for 127.0.0.1 at 2022-12-04 19:29:10 -0300
+Processing by ProvasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (0.4ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProva Load (0.5ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."user_id" = $1 AND "provas"."id" = $2 LIMIT $3[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:64:in `correct_user'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/edit.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 5.9ms | Allocations: 980)
+  Rendered provas/edit.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1134)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 1999)
+Completed 200 OK in 37ms (Views: 17.3ms | ActiveRecord: 1.4ms | Allocations: 4829)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:10 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:29:11 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.5ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 0.4ms | Allocations: 21)
+  Rendered provas/index.html.erb within layouts/application (Duration: 28.9ms | Allocations: 3018)
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:11 -0300
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 4295)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 1.3ms | Allocations: 4580)
+
+
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-12-04 19:29:12 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 3.3ms | Allocations: 902)
+  Rendered provas/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 989)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1862)
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 3612)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:29:13 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered provas/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2382)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3245)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 2.7ms | Allocations: 3518)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:13 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/provas/1" for 127.0.0.1 at 2022-12-04 19:29:14 -0300
+Processing by ProvasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProva Load (1.2ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  Rendering layout layouts/application.html.erb
+  Rendering provas/show.html.erb within layouts/application
+  Rendered provas/_prova.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered provas/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 559)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 7.3ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2200)
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 1.6ms | Allocations: 2963)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:14 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started DELETE "/provas/1" for 127.0.0.1 at 2022-12-04 19:29:15 -0300
+Processing by ProvasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mProva Load (0.4ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:71:in `set_prova'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProva Load (0.3ms)[0m  [1m[34mSELECT "provas".* FROM "provas" WHERE "provas"."user_id" = $1 AND "provas"."id" = $2 LIMIT $3[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/provas_controller.rb:64:in `correct_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/provas_controller.rb:55:in `destroy'
+  [1m[36mProva Destroy (0.4ms)[0m  [1m[31mDELETE FROM "provas" WHERE "provas"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/provas_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/provas_controller.rb:55:in `destroy'
+Redirected to http://127.0.0.1:3000/provas
+Completed 302 Found in 22ms (ActiveRecord: 7.1ms | Allocations: 4334)
+
+
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 19:29:15 -0300
+Processing by ProvasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (0.4ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  Rendered provas/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 824)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 965)
+  Rendered layouts/_alerts.html.erb (Duration: 1.7ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2766)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.7ms | Allocations: 3085)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 19:29:15 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 19:29:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  

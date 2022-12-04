@@ -1,10 +1,34 @@
 <p style="color: green"><%= notice %></p>
+<div class="jumbotron">
+  <h1 class="display-4">Provas</h1>
+  <p class="lead">Aqui está a prova para visualização e edição</p>
+  <hr class="my-4">
+  <div class="alinhamento">
+    <div class="card" style="width: 18rem;">
+      <img src="https://theunisverse.com/wp-content/uploads/2021/01/1566798061-exam-online.png" class="card-img-top" alt="Sunset Over the Sea"/>
+      <div class="card-body">
+        <%= render @prova %>
+        <p class="card-text"><%= notice %></p>
+        <div>
+          <button type="button" class="btn alinhamento"><%= link_to "Edit this prova", edit_prova_path(@prova) %> </button>
+          <button type="button" class="btn alinhamento"><%= link_to "Back to provas", provas_path %></button>
+          <br>
+          <div class="alinhamento">
+            <%= button_to "Destroy this prova", @prova, method: :delete %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<%= render @prova %>
-
-<div>
-  <%= link_to "Edit this prova", edit_prova_path(@prova) %> |
-  <%= link_to "Back to provas", provas_path %>
-
-  <%= button_to "Destroy this prova", @prova, method: :delete %>
 </div>
+
+<style>
+    .alinhamento{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
