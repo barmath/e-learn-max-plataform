@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="Estilização da página de alunos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/_professor_index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/_professor_index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/professors/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/professors/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/provas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/provas/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

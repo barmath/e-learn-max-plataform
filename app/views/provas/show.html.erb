@@ -12,6 +12,7 @@
         <div>
           <button type="button" class="btn alinhamento"><%= link_to "Edit this prova", edit_prova_path(@prova) %> </button>
           <button type="button" class="btn alinhamento"><%= link_to "Back to provas", provas_path %></button>
+          <button type="button" class="btn alinhamento"><%= link_to "Adicionar questões", new_questao_path %></button>
           <br>
           <div class="alinhamento">
             <%= button_to "Destroy this prova", @prova, method: :delete %>
