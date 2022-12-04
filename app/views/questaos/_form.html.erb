@@ -10,11 +10,27 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <% if user_signed_in? %>
+    <% if current_user.has_role? :aluno %>
+      <div>
+        <%= form.label :pergunta, style: "display: block" %>
+        <%= form.text_area :pergunta, disabled: true %>
+      </div>
+    <% end %>
+    <% if current_user.has_role? :professor %>
+      <div>
+        <%= form.label :pergunta, style: "display: block" %>
+        <%= form.text_area :pergunta %>
+      </div>
+    <% end %>
+  <% end %>
+  
   <div>
-    <%= form.label :pergunta, style: "display: block" %>
-    <%= form.text_area :pergunta %>
+    <%= form.label :resposta, style: "display: block" %>
+    <%= form.text_area :resposta %>
   </div>
+  
 
   <div>
     <%= form.submit 'Salvar Pergunta' %>
