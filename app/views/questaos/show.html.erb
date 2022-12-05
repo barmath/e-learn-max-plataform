@@ -8,14 +8,21 @@
       <div class="card-body">
         <%= render @questao %>
         <p class="card-text"><%= notice %></p>
-        <div>
-          <button type="button" class="btn alinhamento"><%= link_to "Editar", edit_questao_path(@questao) %></button>
-          <button type="button" class="btn alinhamento"><%= link_to "Lista de perguntas", questaos_path %></button>
-          <br>
-          <div class="alinhamento">
-            <%= button_to "Excluir pergunta", @questao, method: :delete %>
-          </div>
-        </div>
+        <% if user_signed_in? %>
+          <% if current_user.has_role? :professor %>
+            <div>
+              <button type="button" class="btn alinhamento"><%= link_to "Editar", edit_questao_path(@questao) %></button>
+              <button type="button" class="btn alinhamento"><%= link_to "Lista de perguntas", questaos_path %></button>
+              <br>
+              <div class="alinhamento">
+                <%= button_to "Excluir pergunta", @questao, method: :delete %>
+              </div>
+            </div>
+          <% end %>
+          <% if current_user.has_role? :aluno %>
+            <button type="button" class="btn alinhamento"><%= link_to "Responder", edit_questao_path(@questao) %></button>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>

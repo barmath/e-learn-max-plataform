@@ -20,9 +20,13 @@
             <% end %>
           </div>
         </div>
-        <div>
-          <%= link_to "New prova", new_prova_path %>
-        </div>
+        <% if user_signed_in? %>
+          <% if current_user.has_role? :professor %>
+            <div>
+              <%= link_to "New prova", new_prova_path %>
+            </div>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>

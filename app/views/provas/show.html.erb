@@ -9,15 +9,22 @@
       <div class="card-body">
         <%= render @prova %>
         <p class="card-text"><%= notice %></p>
-        <div>
-          <button type="button" class="btn alinhamento"><%= link_to "Edit this prova", edit_prova_path(@prova) %> </button>
-          <button type="button" class="btn alinhamento"><%= link_to "Back to provas", provas_path %></button>
-          <button type="button" class="btn alinhamento"><%= link_to "Adicionar questões", new_questao_path %></button>
-          <br>
-          <div class="alinhamento">
-            <%= button_to "Destroy this prova", @prova, method: :delete %>
-          </div>
-        </div>
+        <% if user_signed_in? %>
+          <% if current_user.has_role? :professor %>
+            <div>
+              <button type="button" class="btn alinhamento"><%= link_to "Edit this prova", edit_prova_path(@prova) %> </button>
+              <button type="button" class="btn alinhamento"><%= link_to "Back to provas", provas_path %></button>
+              <button type="button" class="btn alinhamento"><%= link_to "Adicionar questões", new_questao_path %></button>
+              <br>
+              <div class="alinhamento">
+                <%= button_to "Destroy this prova", @prova, method: :delete %>
+              </div>
+            </div>
+          <% end %>
+          <% if current_user.has_role? :aluno %>
+            <button type="button" class="btn alinhamento"><%= link_to "Mostrar questoes", questaos_path %></button>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>
