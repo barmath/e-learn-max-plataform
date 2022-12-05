@@ -28,7 +28,10 @@
       value: current_user.id,
       type: :hidden  %>
   </div>
-
+  <div>
+    <%= form.label :nota, style: "display: block" %>
+    <%= form.text_field :nota %>
+  </div>
   <div>
     <%= form.submit %>
   </div>

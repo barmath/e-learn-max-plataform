@@ -15018,3 +15018,296 @@ Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 21:31:51 -0300
   
 ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5904349680232060365)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRespostaToQuestaos (20221205003009)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "questaos" ADD "resposta" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221205003009"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5904349680232060365)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questaos/" for 127.0.0.1 at 2022-12-04 21:54:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestaosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/index.html.erb within layouts/application
+  [1m[36mQuestao Load (0.5ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos"[0m
+  ↳ app/views/questaos/index.html.erb:11
+  Rendered questaos/_questao.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered questaos/index.html.erb within layouts/application (Duration: 25.1ms | Allocations: 6446)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 17.8ms | Allocations: 7731)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 16990)
+Completed 200 OK in 60ms (Views: 41.6ms | ActiveRecord: 9.2ms | Allocations: 20947)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 21:54:24 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 21:54:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/questaos/10" for 127.0.0.1 at 2022-12-04 21:55:15 -0300
+Processing by QuestaosController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mQuestao Load (0.4ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/show.html.erb within layouts/application
+  Rendered questaos/_questao.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questaos/show.html.erb:11
+  [1m[36mRole Load (1.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/questaos/show.html.erb:12
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/questaos/show.html.erb:22
+  Rendered questaos/show.html.erb within layouts/application (Duration: 72.8ms | Allocations: 19461)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 75.5ms | Allocations: 20372)
+Completed 200 OK in 82ms (Views: 67.6ms | ActiveRecord: 9.1ms | Allocations: 22073)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 21:55:15 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 21:55:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/questaos/10/edit" for 127.0.0.1 at 2022-12-04 21:55:16 -0300
+Processing by QuestaosController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mQuestao Load (0.4ms)[0m  [1m[34mSELECT "questaos".* FROM "questaos" WHERE "questaos"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/questaos_controller.rb:63:in `set_questao'
+  Rendering layout layouts/application.html.erb
+  Rendering questaos/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questaos/_form.html.erb:14
+  [1m[36mRole Load (1.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/questaos/_form.html.erb:15
+  [1m[36mRole Load (3.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/questaos/_form.html.erb:21
+  Rendered questaos/_form.html.erb (Duration: 30.4ms | Allocations: 5974)
+  Rendered questaos/edit.html.erb within layouts/application (Duration: 33.4ms | Allocations: 6347)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 7260)
+Completed 200 OK in 41ms (Views: 33.0ms | ActiveRecord: 5.9ms | Allocations: 8151)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 21:55:16 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 21:55:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-04 22:30:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (1.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 1.3ms | Allocations: 357)
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (6.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 83.4ms | Allocations: 22391)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 506)
+  Rendered layout layouts/application.html.erb (Duration: 90.3ms | Allocations: 25728)
+Completed 200 OK in 103ms (Views: 75.1ms | ActiveRecord: 19.2ms | Allocations: 29160)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 22:30:13 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 22:30:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/mate/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/provas" for 127.0.0.1 at 2022-12-04 22:30:17 -0300
+Processing by ProvasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering provas/index.html.erb within layouts/application
+  [1m[36mProva Load (1.4ms)[0m  [1m[34mSELECT "provas".* FROM "provas"[0m
+  ↳ app/views/provas/index.html.erb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/provas/index.html.erb:13
+  Rendered provas/_prova.html.erb (Duration: 10.7ms | Allocations: 5974)
+  Rendered provas/index.html.erb within layouts/application (Duration: 55.6ms | Allocations: 14843)
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 14929)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 6.2ms | Allocations: 16617)
+
+
+  
+ActionView::Template::Error (undefined method `nota' for #<Prova id: 2, titulo: "Prova MVGA", instrucoes: "É isso ai ", created_at: "2022-12-04 22:32:28.721461000 +0000", updated_at: "2022-12-04 22:32:28.721461000 +0000", user_id: 2, resposta: nil>):
+    15:   </p>
+    16:   <p>
+    17:     <strong>Nota</strong>
+    18:     <%= prova.nota %>
+    19:   </p>
+    20: 
+    21: </div>
+  
+app/views/provas/_prova.html.erb:18
+app/views/provas/index.html.erb:14
+app/views/provas/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2022-12-04 22:30:19 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'aluno') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/_alunos_index.html.erb (Duration: 0.8ms | Allocations: 72)
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'professor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/home/index.html.erb:7
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = $1 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 3815)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4730)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 2.7ms | Allocations: 5027)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 22:30:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 22:30:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/professors" for 127.0.0.1 at 2022-12-04 22:30:28 -0300
+Processing by ProfessorsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering professors/index.html.erb within layouts/application
+  Rendered professors/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 323)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:11
+  Rendered home/_header.html.erb (Duration: 4.3ms | Allocations: 1168)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2545)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 3247)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 22:30:28 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 22:30:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-12-04 22:30:29 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 13.2ms | Allocations: 3561)
+  Rendered provas/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 3915)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4930)
+Completed 200 OK in 29ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 8668)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 22:30:29 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 22:30:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 22:30:31 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 22:30:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/provas/new" for 127.0.0.1 at 2022-12-04 22:30:40 -0300
+Processing by ProvasController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering provas/new.html.erb within layouts/application
+  Rendered provas/_form.html.erb (Duration: 5.2ms | Allocations: 1154)
+  Rendered provas/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1241)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2114)
+Completed 200 OK in 22ms (Views: 14.8ms | ActiveRecord: 0.4ms | Allocations: 4055)
+
+
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 22:30:40 -0300
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 22:30:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 127.0.0.1 at 2022-12-04 22:30:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 127.0.0.1 at 2022-12-04 22:30:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
