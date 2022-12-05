@@ -24,7 +24,11 @@ class ProvasController < ApplicationController
   # POST /provas or /provas.json
   def create
     #@prova = Prova.new(prova_params)
-    @prova = current_user.provas.build(prova_params)
+
+    if Prova.joins(:current_user).where(provas: { em_edicao: true }).count == 0
+      @prova = current_user.provas.build(prova_params)
+    end
+
 
     respond_to do |format|
       if @prova.save
