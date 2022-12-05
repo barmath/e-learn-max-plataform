@@ -14,22 +14,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_010630) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "friend_duos", force: :cascade do |t|
-    t.string "first_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_friend_duos_on_user_id"
-  end
-
-  create_table "friends", force: :cascade do |t|
-    t.string "fist_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "prova_id"
-    t.index ["prova_id"], name: "index_friends_on_prova_id"
-  end
-
   create_table "provas", force: :cascade do |t|
     t.string "titulo"
     t.string "instrucoes"
@@ -42,22 +26,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_010630) do
     t.index ["user_id"], name: "index_provas_on_user_id"
   end
 
-  create_table "questao_provas", force: :cascade do |t|
-    t.integer "questao_id"
-    t.integer "prova_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["prova_id"], name: "index_questao_provas_on_prova_id"
-    t.index ["questao_id"], name: "index_questao_provas_on_questao_id"
-  end
-
   create_table "questaos", force: :cascade do |t|
     t.text "pergunta"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "prova_id"
     t.string "resposta"
-    t.index ["prova_id"], name: "index_questaos_on_prova_id"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -69,12 +42,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_010630) do
     t.index ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
     t.index ["name"], name: "index_roles_on_name"
     t.index ["resource_type", "resource_id"], name: "index_roles_on_resource"
-  end
-
-  create_table "testes", force: :cascade do |t|
-    t.string "campoqqr"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
