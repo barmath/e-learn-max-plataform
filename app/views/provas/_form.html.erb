@@ -10,16 +10,42 @@
       </ul>
     </div>
   <% end %>
+  
+  <% if user_signed_in? %>
+    <% if current_user.has_role? :professor %>
+      <div>
+        <%= form.label :titulo, style: "display: block" %>
+        <%= form.text_field :titulo %>
+      </div>
+      <br/>
+      <div>
+        <%= form.label :instrucoes, style: "display: block" %>
+        <%= form.text_field :instrucoes %>
+      </div>
+      <div>
+        <%= form.label :nota, style: "display: block" %>
+        <%= form.text_field :nota %>
+      </div>
+      <div>
+      <%= form.label :concluida, style: "display: block" %>
+      <%= form.radio_button :done,true %>
+    </div>
 
-  <div>
-    <%= form.label :titulo, style: "display: block" %>
-    <%= form.text_field :titulo %>
-  </div>
-<br/>
-  <div>
-    <%= form.label :instrucoes, style: "display: block" %>
-    <%= form.text_field :instrucoes %>
-  </div>
+    <% end %>
+    <% if current_user.has_role? :aluno %>
+      <div>
+        <%= form.label :concluida, style: "display: block" %>
+        <%= form.radio_button :done,true %>
+      </div>
+      <div>
+        <%= form.label :nota, style: "display: block" %>
+        <%= form.text_field :nota , disabled: true %>
+      </div>
+    <% end %>
+  <% end %>
+  
+  
+
   <br/>
   <div class=“field form-group”>
         

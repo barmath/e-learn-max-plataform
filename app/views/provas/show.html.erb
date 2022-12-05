@@ -22,7 +22,10 @@
             </div>
           <% end %>
           <% if current_user.has_role? :aluno %>
-            <button type="button" class="btn alinhamento"><%= link_to "Mostrar questoes", questaos_path %></button>
+            <div>
+              <button type="button" class="btn alinhamento"><%= link_to "Status da prova", edit_prova_path(@prova) %> </button>
+              <button type="button" class="btn alinhamento"><%= link_to "Mostrar questoes", questaos_path %></button>
+            </div>
           <% end %>
         <% end %>
       </div>

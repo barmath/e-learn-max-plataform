@@ -1,7 +1,6 @@
 class ProvasController < ApplicationController
   before_action :set_prova, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /provas or /provas.json
   def index
@@ -73,6 +72,6 @@ class ProvasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def prova_params
-      params.require(:prova).permit(:titulo, :instrucoes, :user_id)
+      params.require(:prova).permit(:titulo, :instrucoes, :user_id, :nota, :done)
     end
 end
