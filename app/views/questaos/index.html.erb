@@ -1,14 +1,33 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Perguntas</h1>
-
-<div id="questaos">
-  <% @questaos.each do |questao| %>
-    <%= render questao %>
-    <p>
-      <%= link_to "Mostrar perguntas", questao %>
-    </p>
-  <% end %>
+<div class="jumbotron">
+  <h1 class="display-4">Questões</h1>
+  <p class="lead">LIsta de Questões</p>
+  <hr class="my-4">
+  <div class="alinhamento">
+    <div class="card" style="width: 18rem;">
+      <img src="https://www.sulinfoco.com.br/wp-content/uploads/2019/07/professor.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+      <div class="card-body">
+        <div id="questaos">
+          <% @questaos.each do |questao| %>
+            <%= render questao %>
+            <p>
+              <%= link_to "Mostrar perguntas", questao %>
+            </p>
+          <% end %>
+        </div>
+        <div>
+          <%= link_to "Nova Pergunta", new_questao_path %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<%= link_to "Nova Pergunta", new_questao_path %>
+<style>
+    .alinhamento{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
