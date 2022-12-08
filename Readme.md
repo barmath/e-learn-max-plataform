@@ -12,7 +12,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/barmath/e-learn-max-plataform/badge.svg?branch=main)](https://coveralls.io/github/barmath/e-learn-max-plataform?branch=main)
 
-* Link heroku :  https://trabalho-eng-soft-each.herokuapp.com/
+* Link heroku :  https://railsetests.herokuapp.com/
 
 * Integrantes : 
         Gregório Assagra de Almeida Filho,
