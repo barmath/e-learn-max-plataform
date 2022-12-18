@@ -18,7 +18,7 @@
         Gregório Assagra de Almeida Filho,
         Gustavo Henrique Barbosa Rogério,
         Gustavo Pimentel Soares,
-        Louis Zháo Long,
+        Louis Zháo Long, 
         Mateus Santos Saldanha e 
         Matheus Barbosa
 
