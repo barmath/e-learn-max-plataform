@@ -3,9 +3,11 @@ on:
   pull_request:
     branches:
       - grotta
+      - main
   push:
     branches:
       - grotta
+      - main
 
 jobs:
 #  services:

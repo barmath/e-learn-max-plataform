@@ -19,7 +19,7 @@ gem 'coveralls_reborn', '~> 0.25.0', require: false
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'rolify'
 
-#gem 'pg', '~> 1.4', '>= 1.4.5' 
+gem 'pg', '~> 1.4', '>= 1.4.5' 
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -34,10 +34,6 @@ group :development, :test do
   gem 'simplecov-lcov', require: false
   
 end
-
-group :production do
-  gem 'pg', '~> 1.4', '>= 1.4.5'
-end 
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
