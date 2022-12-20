@@ -18,7 +18,7 @@ gem "bootsnap", require: false
 gem 'coveralls_reborn', '~> 0.25.0', require: false
 gem "sqlite3", "~> 1.4"
 gem 'devise', '~> 4.8', '>= 4.8.1'
-gem 'rolify'
+gem 'rolify' 
 
 gem 'pg'
 group :development, :test do
