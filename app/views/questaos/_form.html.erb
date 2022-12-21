@@ -12,10 +12,15 @@
   <% end %>
   
   <% if user_signed_in? %>
+   
     <% if current_user.has_role? :aluno %>
       <div>
         <%= form.label :pergunta, style: "display: block" %>
         <%= form.text_area :pergunta, disabled: true %>
+      </div>
+      <div>
+        <%= form.label :resposta, style: "display: block" %>
+        <%= form.text_area :resposta %>
       </div>
     <% end %>
     <% if current_user.has_role? :professor %>
@@ -23,13 +28,14 @@
         <%= form.label :pergunta, style: "display: block" %>
         <%= form.text_area :pergunta %>
       </div>
+      <div>
+        <%= form.label :resposta, style: "display: block" %>
+        <%= form.text_area :resposta , disabled: true %>
+      </div>
     <% end %>
+
   <% end %>
   
-  <div>
-    <%= form.label :resposta, style: "display: block" %>
-    <%= form.text_area :resposta %>
-  </div>
   
 
   <div>
