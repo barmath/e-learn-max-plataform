@@ -11,13 +11,15 @@
           <% @questaos.each do |questao| %>
             <%= render questao %>
             <p>
-              <%= link_to "Mostrar perguntas", questao %>
+              <%= link_to "Mostrar esta pergunta", questao %>
             </p>
           <% end %>
         </div>
-        <div>
-          <%= link_to "Nova Pergunta", new_questao_path %>
-        </div>
+        <% if current_user.has_role? :professor %>
+          <div>
+            <%= link_to "Nova Pergunta", new_questao_path %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

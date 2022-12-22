@@ -3,9 +3,13 @@ on:
   pull_request:
     branches:
       - grotta
+      - main
+      - dockerfile_for_tests
   push:
     branches:
       - grotta
+      - main
+      - dockerfile_for_tests
 
 jobs:
 #  services:
@@ -110,6 +114,7 @@ jobs:
           bundle update --bundler
           bundle exec rails db:setup
           bundle exec rake db:migrate
+          bundle exec rake spec
           bundle exec cucumber 
       - name: Coveralls
         env:
