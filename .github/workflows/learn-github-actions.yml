@@ -4,12 +4,12 @@ on:
     branches:
       - grotta
       - main
-      - dockerfile_for_tests
+      - newTestes
   push:
     branches:
       - grotta
       - main
-      - dockerfile_for_tests
+      - newTestes
 
 jobs:
 #  services:
