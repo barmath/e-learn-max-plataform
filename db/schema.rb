@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_30_003907) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_05_010630) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,6 +20,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_30_003907) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.string "resposta"
+    t.boolean "done"
+    t.decimal "nota"
     t.index ["user_id"], name: "index_provas_on_user_id"
   end
 
@@ -27,6 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_30_003907) do
     t.text "pergunta"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "resposta"
   end
 
   create_table "roles", force: :cascade do |t|

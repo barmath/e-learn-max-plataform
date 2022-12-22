@@ -12,13 +12,13 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/barmath/e-learn-max-plataform/badge.svg?branch=main)](https://coveralls.io/github/barmath/e-learn-max-plataform?branch=main)
 
-* Link heroku :  https://trabalho-eng-soft-each.herokuapp.com/
+* Link heroku :  https://railsetests.herokuapp.com/
 
 * Integrantes : 
         Gregório Assagra de Almeida Filho,
         Gustavo Henrique Barbosa Rogério,
         Gustavo Pimentel Soares,
-        Louis Zháo Long,
+        Louis Zháo Long, 
         Mateus Santos Saldanha e 
         Matheus Barbosa
 

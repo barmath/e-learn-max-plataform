@@ -16,11 +16,11 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'coveralls_reborn', '~> 0.25.0', require: false
-gem "sqlite3", "~> 1.4"
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'rolify'
 
-gem 'pg'
+gem 'pg', '~> 1.4', '>= 1.4.5'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -29,13 +29,13 @@ group :development, :test do
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
   # Use sqlite3 as the database for Active Record
-  
+  gem "sqlite3", "~> 1.4"
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
   
 end
 
-group :development do
+group :development do 
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
   

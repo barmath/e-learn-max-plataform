@@ -65,6 +65,6 @@ class QuestaosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def questao_params
-      params.require(:questao).permit(:pergunta)
+      params.require(:questao).permit(:pergunta, :resposta)
     end
 end

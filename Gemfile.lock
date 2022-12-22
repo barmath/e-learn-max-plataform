@@ -316,7 +316,7 @@ DEPENDENCIES
   devise (~> 4.8, >= 4.8.1)
   importmap-rails
   jbuilder
-  pg
+  pg (~> 1.4, >= 1.4.5)
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
   rolify

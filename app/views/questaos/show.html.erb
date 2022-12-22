@@ -1,10 +1,40 @@
-<p style="color: green"><%= notice %></p>
+<div class="jumbotron">
+  <h1 class="display-4">Questões</h1>
+  <p class="lead">Aqui está a questão completa para visualização e edição</p>
+  <hr class="my-4">
+  <div class="alinhamento">
+    <div class="card" style="width: 18rem;">
+      <img src="https://theunisverse.com/wp-content/uploads/2021/01/1566798061-exam-online.png" class="card-img-top" alt="Sunset Over the Sea"/>
+      <div class="card-body">
+        <%= render @questao %>
+        <p class="card-text"><%= notice %></p>
+        <% if user_signed_in? %>
+          <% if current_user.has_role? :professor %>
+            <div>
+              <button type="button" class="btn alinhamento"><%= link_to "Editar", edit_questao_path(@questao) %></button>
+              <button type="button" class="btn alinhamento"><%= link_to "Lista de perguntas", questaos_path %></button>
+              <br>
+              <div class="alinhamento">
+                <%= button_to "Excluir pergunta", @questao, method: :delete %>
+              </div>
+            </div>
+          <% end %>
+          <% if current_user.has_role? :aluno %>
+            <button type="button" class="btn alinhamento"><%= link_to "Responder", edit_questao_path(@questao) %></button>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-<%= render @questao %>
-
-<div>
-  <%= link_to "Editar pergunta", edit_questao_path(@questao) %> |
-  <%= link_to "Voltar para lista de perguntas", questaos_path %>
-
-  <%= button_to "Excluir pergunta", @questao, method: :delete %>
 </div>
+
+<style>
+  .alinhamento{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+  }
+</style>
