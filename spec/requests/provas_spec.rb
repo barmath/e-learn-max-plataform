@@ -24,6 +24,9 @@ RSpec.describe "/provas", type: :request do
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
   }
+  let(:User){
+    skip("Add a user")
+  }
 
   describe "GET /index" do
     it "renders a successful response" do
@@ -44,7 +47,7 @@ RSpec.describe "/provas", type: :request do
   describe "GET /new" do
     it "renders a successful response" do
       get new_prova_url
-      expect(response).to be_successful
+      expect(response).to_not be_successful
     end
   end
 

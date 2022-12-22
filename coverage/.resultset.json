@@ -1,7 +1,261 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/channels/application_cable/channel.rb": {
+      "/myapp/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/myapp/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/myapp/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/helpers/home_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/helpers/provas_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/helpers/questaos_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/models/prova.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/myapp/app/models/questao.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/models/role.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/myapp/app/controllers/provas_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/myapp/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/controllers/questaos_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/myapp/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -11,7 +265,7 @@
         "branches": {
         }
       },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/channels/application_cable/connection.rb": {
+      "/myapp/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -21,7 +275,7 @@
         "branches": {
         }
       },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/controllers/alunos_controller.rb": {
+      "/myapp/app/controllers/alunos_controller.rb": {
         "lines": [
           0,
           null,
@@ -30,15 +284,7 @@
         "branches": {
         }
       },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/controllers/home_controller.rb": {
+      "/myapp/app/controllers/home_controller.rb": {
         "lines": [
           0,
           0,
@@ -56,7 +302,7 @@
         "branches": {
         }
       },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/controllers/professors_controller.rb": {
+      "/myapp/app/controllers/professors_controller.rb": {
         "lines": [
           0,
           null,
@@ -65,159 +311,7 @@
         "branches": {
         }
       },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/controllers/provas_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/controllers/questaos_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/controllers/users_controller.rb": {
+      "/myapp/app/controllers/users_controller.rb": {
         "lines": [
           0,
           0,
@@ -246,39 +340,7 @@
         "branches": {
         }
       },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/helpers/home_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/helpers/provas_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/helpers/questaos_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/jobs/application_job.rb": {
+      "/myapp/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -291,94 +353,18 @@
         "branches": {
         }
       },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/mailers/application_mailer.rb": {
+      "/myapp/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
           0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/models/prova.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/models/questao.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/models/role.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/matheusbarbosa/Desktop/e-learn-max-plataform/app/models/user.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1669755951
+    "timestamp": 1671671774
   },
   "Cucumber Features": {
     "coverage": {

@@ -7,8 +7,4 @@ RSpec.describe "questaos/show", type: :view do
     ))
   end
 
-  it "renders attributes in <p>" do
-    render
-    expect(rendered).to match(/MyText/)
-  end
 end

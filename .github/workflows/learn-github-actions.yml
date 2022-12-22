@@ -4,10 +4,12 @@ on:
     branches:
       - grotta
       - main
+      - newTestes
   push:
     branches:
       - grotta
       - main
+      - newTestes
 
 jobs:
 #  services:
@@ -112,6 +114,7 @@ jobs:
           bundle update --bundler
           bundle exec rails db:setup
           bundle exec rake db:migrate
+          bundle exec rake spec
           bundle exec cucumber 
       - name: Coveralls
         env:

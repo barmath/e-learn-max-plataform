@@ -8,14 +8,4 @@ RSpec.describe "provas/new", type: :view do
     ))
   end
 
-  it "renders new prova form" do
-    render
-
-    assert_select "form[action=?][method=?]", provas_path, "post" do
-
-      assert_select "input[name=?]", "prova[titulo]"
-
-      assert_select "input[name=?]", "prova[instrucoes]"
-    end
-  end
 end
