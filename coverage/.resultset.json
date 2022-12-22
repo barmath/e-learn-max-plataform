@@ -178,6 +178,7 @@
       "/home/mate/RubymineProjects/e-learn-max-plataform/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          null,
           null
         ]
       },
@@ -362,7 +363,7 @@
         }
       }
     },
-    "timestamp": 1671670078
+    "timestamp": 1671671427
   },
   "Cucumber Features": {
     "coverage": {
