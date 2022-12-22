@@ -776,3 +776,115 @@ Completed 200 OK in 93ms (Views: 75.0ms | ActiveRecord: 0.4ms | Allocations: 590
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (10.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (10.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (5.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (4718.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flatiron_mod3_test"[0m
+  [1m[35m (7363.0ms)[0m  [1m[35mCREATE DATABASE "flatiron_mod3_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "provas" CASCADE[0m
+  [1m[35m (109.9ms)[0m  [1m[35mCREATE TABLE "provas" ("id" bigserial primary key, "titulo" character varying, "instrucoes" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" integer, "resposta" character varying, "done" boolean, "nota" decimal)[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE INDEX "index_provas_on_user_id" ON "provas" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "questaos" CASCADE[0m
+  [1m[35m (44.3ms)[0m  [1m[35mCREATE TABLE "questaos" ("id" bigserial primary key, "pergunta" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "resposta" character varying)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "roles" CASCADE[0m
+  [1m[35m (55.6ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "name" character varying, "resource_type" character varying, "resource_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (18.0ms)[0m  [1m[35mCREATE INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE INDEX "index_roles_on_resource" ON "roles" ("resource_type", "resource_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (56.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (23.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users_roles" CASCADE[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" bigint, "role_id" bigint)[0m
+  [1m[35m (22.9ms)[0m  [1m[35mCREATE INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  [1m[35m (20.8ms)[0m  [1m[35mCREATE INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  [1m[35m (57.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221205010630)[0m
+  [1m[35m (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221010130110),
+(20221016214132),
+(20221109131133),
+(20221129210550),
+(20221130003907),
+(20221204232840),
+(20221205003009),
+(20221205003603);
+
+[0m
+  [1m[35m (43.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-12-22 00:13:41.262637"], ["updated_at", "2022-12-22 00:13:41.262637"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "061682dec55980425f25b0b87fc96f355b38b032"], ["created_at", "2022-12-22 00:13:41.288585"], ["updated_at", "2022-12-22 00:13:41.288585"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (7.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (8.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (6.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (9.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (7.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (7.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (6.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (6.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (8.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (14.6ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at", "resposta") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pergunta", nil], ["created_at", "2022-12-22 00:59:27.934977"], ["updated_at", "2022-12-22 00:59:27.934977"], ["resposta", nil]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (8.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (11.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuestao Create (4.9ms)[0m  [1m[32mINSERT INTO "questaos" ("pergunta", "created_at", "updated_at", "resposta") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pergunta", nil], ["created_at", "2022-12-22 00:59:47.546132"], ["updated_at", "2022-12-22 00:59:47.546132"], ["resposta", nil]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m

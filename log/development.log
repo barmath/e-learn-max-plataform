@@ -17060,3 +17060,161 @@ ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
   
 ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
   
+Started GET "/" for 172.19.0.1 at 2022-12-22 00:05:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (35.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20221204232840_add_resposta_to_provas.rb
+20221205003009_add_resposta_to_questaos.rb
+20221205003603_add_done_to_provas.rb
+20221205010630_add_nota_to_provas.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 172.19.0.1 at 2022-12-22 00:05:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5904349680232060365)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRespostaToProvas (20221204232840)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (23.9ms)[0m  [1m[35mALTER TABLE "provas" ADD "resposta" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221204232840"]]
+  [1m[36mTRANSACTION (14.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRespostaToQuestaos (20221205003009)
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "questaos" ADD "resposta" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221205003009"]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDoneToProvas (20221205003603)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "provas" ADD "done" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221205003603"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddNotaToProvas (20221205010630)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "provas" ADD "nota" decimal[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221205010630"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (27.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5904349680232060365)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.19.0.1 at 2022-12-22 00:05:50 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 70.1ms | Allocations: 749)
+  Rendered home/_header.html.erb (Duration: 69.6ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 317.8ms | Allocations: 3923)
+Completed 200 OK in 650ms (Views: 349.8ms | ActiveRecord: 0.0ms | Allocations: 6654)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-12-22 00:05:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-12-22 00:05:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/" for 172.19.0.1 at 2022-12-22 00:24:30 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (10.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 272.9ms | Allocations: 1109)
+  Rendered home/_header.html.erb (Duration: 20.5ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 609.6ms | Allocations: 4370)
+Completed 200 OK in 1751ms (Views: 991.6ms | ActiveRecord: 0.0ms | Allocations: 7817)
+
+
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-12-22 00:24:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-12-22 00:24:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/users/sign_up" for 172.19.0.1 at 2022-12-22 00:24:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 44.5ms | Allocations: 256)
+  Rendered devise/shared/_links.html.erb (Duration: 147.0ms | Allocations: 617)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 882.9ms | Allocations: 5654)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 887.5ms | Allocations: 6671)
+Completed 200 OK in 1060ms (Views: 942.7ms | ActiveRecord: 19.3ms | Allocations: 13593)
+
+
+Started GET "/bootstrap.min.js" for 172.19.0.1 at 2022-12-22 00:24:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.min.js"):
+  
+Started GET "/jquery-3.2.1.min.js" for 172.19.0.1 at 2022-12-22 00:24:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/jquery-3.2.1.min.js"):
+  
