@@ -47,7 +47,7 @@ RSpec.describe "/provas", type: :request do
   describe "GET /new" do
     it "renders a successful response" do
       get new_prova_url
-      expect(response)
+      expect(response).to_not be_successful
     end
   end
 
