@@ -255,6 +255,22 @@
           null
         ]
       },
+      "/home/mate/RubymineProjects/e-learn-max-plataform/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/home/mate/RubymineProjects/e-learn-max-plataform/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -279,24 +295,6 @@
         "lines": [
           0,
           null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/mate/RubymineProjects/e-learn-max-plataform/app/controllers/home_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0,
           0
         ],
         "branches": {
@@ -364,7 +362,7 @@
         }
       }
     },
-    "timestamp": 1671667063
+    "timestamp": 1671667953
   },
   "Cucumber Features": {
     "coverage": {

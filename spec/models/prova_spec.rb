@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Prova, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "Validar usuário na prova" do
+    it "Pertence ao usuário" do
+
+    end
+
+    it "Não pertence ao usuário" do
+
+    end
+  end
 end

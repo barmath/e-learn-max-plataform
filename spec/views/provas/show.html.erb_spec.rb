@@ -8,4 +8,9 @@ RSpec.describe "provas/show", type: :view do
     ))
   end
 
+  it "renders attributes" do
+    render
+    expect(rendered).to match(/Titulo/)
+    expect(rendered).to match(/Instrucoes/)
+  end
 end

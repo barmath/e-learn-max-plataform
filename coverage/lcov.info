@@ -18,12 +18,9 @@ SF:./app/controllers/application_controller.rb
 DA:1,1
 end_of_record
 SF:./app/controllers/home_controller.rb
-DA:1,0
-DA:2,0
-DA:4,0
-DA:5,0
-DA:11,0
-DA:12,0
+DA:1,1
+DA:2,1
+DA:5,1
 end_of_record
 SF:./app/controllers/professors_controller.rb
 DA:1,0
