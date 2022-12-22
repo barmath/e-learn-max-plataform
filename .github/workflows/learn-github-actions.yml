@@ -105,17 +105,17 @@ jobs:
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
           yarn install --frozen-lockfile
-      - name: Run tests
-        env:
-          RAILS_ENV: test
-          DATABASE_URL: "postgres://postgres@localhost:5432/flatiron_mod3_test"
-          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-        run: |
-          bundle update --bundler
-          bundle exec rails db:setup
-          bundle exec rake db:migrate
-          bundle exec rake spec
-          bundle exec cucumber 
+      # - name: Run tests
+      #   env:
+      #     RAILS_ENV: test
+      #     DATABASE_URL: "postgres://postgres@localhost:5432/flatiron_mod3_test"
+      #     RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+      #   run: |
+      #     bundle update --bundler
+      #     bundle exec rails db:setup
+      #     bundle exec rake db:migrate
+      #     bundle exec rake spec
+      #     bundle exec cucumber 
       - name: Coveralls
         env:
           RAILS_ENV: test
