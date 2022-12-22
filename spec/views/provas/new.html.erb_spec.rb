@@ -16,6 +16,10 @@ RSpec.describe "provas/new", type: :view do
       assert_select "input[name=?]", "prova[titulo]"
 
       assert_select "input[name=?]", "prova[instrucoes]"
+
+      assert_select "input[name=?]", "prova[User Id]"
+
+      assert_select "input[name=?]", "prova[Nota]"
     end
   end
 end
