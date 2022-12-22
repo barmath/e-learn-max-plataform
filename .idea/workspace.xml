@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3572fe-cad3-4054-a3a9-7dcdf73f15dc" name="Changes" comment="Estilização da página de alunos">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/learn-github-actions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/learn-github-actions.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/provas_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/provas_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +175,7 @@
       <workItem from="1670506360231" duration="26000" />
       <workItem from="1671136695675" duration="11000" />
       <workItem from="1671667342824" duration="4000" />
-      <workItem from="1671667634016" duration="3480000" />
+      <workItem from="1671667634016" duration="4142000" />
     </task>
     <task id="LOCAL-00001" summary="modificações do aluno">
       <created>1669251245244</created>
