@@ -6,7 +6,7 @@ Funcionalidade: Elaborar questões dissertativas
 
     # Cenário: Cadastro de questões com êxito(Cenário feliz)
     #     Dado que estou na página de nova pergunta
-    #     Quando preencho o campo de pergunta com "Pergunta 1"
+    #     Quando preencho o campo de pergunta com "Pergunta 1" 
     #     Quando aperto o botão Salvar Pergunta
     #     Então deve pedir confirmação para salvar a pergunta
     #     Então ele deve salvar a questão no banco de dados
