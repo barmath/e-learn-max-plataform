@@ -14,7 +14,7 @@ RSpec.describe Prova, type: :model do
   end
 end
 
-RSpec.describe Prova, type> :controller do
+RSpec.describe Prova, type: :controller do
   it "is able to index provas" do
     expect(Prova.index).to be_successful
   end
