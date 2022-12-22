@@ -12,6 +12,9 @@ RSpec.describe Prova, type: :model do
     prova = Prova.new(updated_at: nil)
     expect(prova).to_not be_valid
   end
+end
+
+RSpec.describe Prova, type> :controller do
   it "is able to index provas" do
     expect(Prova.index).to be_successful
   end
